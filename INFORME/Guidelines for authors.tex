@@ -1,0 +1,70 @@
+%% -------------------------------------------------------------------------------------
+% This is a general template file for preparing an article for Revista Colombiana de Estadística
+% *************************************************************************************
+\documentclass[english]{revcoles}
+\usepackage[latin1]{inputenc}
+%
+\hyphenation{}
+% //// --------------------------------------------------------------------------------
+\begin{document}
+
+\title[maintitle = Tarea 1,
+]
+
+\begin{authors}
+\author[firstname = Kevin,
+        surname = García,
+        numberinstitution = 1,
+        code= 1533173,
+        affiliation = Universidad del Valle,
+        email = kevin.chica@correounivalle.edu.co]
+\author[firstname = Alejandro,
+        surname = Vargas,
+        numberinstitution = 1,
+        code= 1525953,
+        affiliation = Universidad del Valle,
+        email = jose.alejandro.vargas@correounivalle.edu.co]
+\end{authors}
+%
+\begin{institutions}
+     \institute[subdivision = Departamento de estadística,
+                institution = Universidad del Valle,
+                city = Cali,
+                country = Colombia]
+\end{institutions}
+
+\section{Antecedentes trabajo de grado}
+
+
+
+
+\section{Efron \& Hastie (2017)}
+
+
+
+\section{Lantz (2013) o Torgo (2017)}
+
+
+
+
+\section{Citations}
+Authors should use BiBTeX to prepare references whenever possible. Use the \emph{references.bib} style given in the \LaTeX\ macro package (see the website of the journal). References in the text are included by using  in other the commands \emph{cite} and \emph{citeasnoun}. Some examples of citations are
+
+\begin{itemize}
+\item \cite{Dodge-85},
+\item \citeasnoun{Borges-05}
+\item \citeasnoun{Conover-81}
+\item \citeasnoun{R}
+\end{itemize}
+
+\section{Appendices}
+
+Lengthy technical portions of a manuscript should appear in a separate appendix to the manuscript.
+
+
+    \bibliography{references}
+
+    \appendix% !don't modify this line¡
+
+\end{document}
+
