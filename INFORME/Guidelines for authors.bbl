@@ -1,26 +1,7 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{Brown \harvardand\ Forsythe}{1974}{Borges-05}
-Brown, M. \harvardand\ Forsythe  \harvardyearleft 1974\harvardyearright ,
-  `{Robust Test for the Equality of Variantes}', {\em Journal of the American
-  Statistical Association} {\bf 69}(346),~364--367.
-
-\harvarditem[Conover et~al.]{Conover, Johnson \harvardand\
-  Johnson}{1981}{Conover-81}
-Conover, W., Johnson, M.~E. \harvardand\ Johnson, M.  \harvardyearleft
-  1981\harvardyearright , `{A Comparative Study of Tests for Homogeneity of
-  Variances, With Applications to the Outer Continental Shelf Bidding Data}',
-  {\em Technometrics} {\bf 23},~351--361.
-
-\harvarditem{Dodge}{1985}{Dodge-85}
-Dodge, Y.  \harvardyearleft 1985\harvardyearright , {\em {A}nalysis of
-  {E}xperiments with {M}issing {D}ata}, John Wiley \& Sons, {New York}.
-
-\harvarditem{{R Development Core Team}}{2007}{R}
-{R Development Core Team}  \harvardyearleft 2007\harvardyearright , {\em R: A
-  Language and Environment for Statistical Computing}, R Foundation for
-  Statistical Computing, Vienna, Austria.
-\newblock {ISBN} 3-900051-07-0.
-\newline\harvardurl{http://www.R-project.org}
+\harvarditem{Lantz}{2013}{L}
+Lantz, B.  \harvardyearleft 2013\harvardyearright , {\em Machine learning with
+  R}, Packt Publishing.
 
 \end{thebibliography}
