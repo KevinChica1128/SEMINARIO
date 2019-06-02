@@ -587,11 +587,11 @@
 \vspace*{-14mm}%
 \begin{flushright}
     \small%
-    \textbf{XXIX Simposio Internacional de Estadística}\\[1pt]
-    Barranquilla - Julio 15-19 de 2019\\[-9pt]
-    {\color{lightgray}\underline{\mbox{\hphantom{Barranquilla - Julio 15-19 de 2019}}}}
+    \textbf{Seminario}\\[1pt]
+    Cali - Junio 07 de 2019\\[-9pt]
+    {\color{lightgray}\underline{\mbox{\hphantom{Cali - Junio 07 de 2019}}}}
 \end{flushright}\vspace{8mm}
-    \def\footmark{Simposio Internacional de Estadística, Barranquilla}
+    \def\footmark{Seminario}
 }
 
 \def\labelreferees{

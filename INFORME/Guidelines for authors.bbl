@@ -1,5 +1,15 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Efron \harvardand\ Hastie}{2017}{EyH}
+Efron, B. \harvardand\ Hastie, T.  \harvardyearleft 2017\harvardyearright ,
+  {\em Computer age statistical inference. Algorithms, Evidence, and Data
+  Science}, Cambridge.
+
+\harvarditem{Jozani \harvardand\ Mirkamali}{2010}{A1}
+Jozani, M.~J. \harvardand\ Mirkamali, S.~J.  \harvardyearleft
+  2010\harvardyearright , `Improved attribute acceptance sampling plans based
+  on maxima nomination sampling', {\em Statistical Planning and Inference} .
+
 \harvarditem{Lantz}{2013}{L}
 Lantz, B.  \harvardyearleft 2013\harvardyearright , {\em Machine learning with
   R}, Packt Publishing.
