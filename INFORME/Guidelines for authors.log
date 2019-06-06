@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  2 JUN 2019 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.24)  6 JUN 2019 11:37
 entering extended mode
 **"./Guidelines for authors.tex"
 ("Guidelines for authors.tex"
@@ -7,31 +7,40 @@ LaTeX2e <2018-12-01>
 Document Class: revcoles 2009/04/22 v2.5 document class for multi authored arti
 cle for REVCOLES journal, Symposium of statistic, projects of pregrade in stati
 stic, and report in a course at the National University of Colombia
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.s
+ty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1enc.def"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def
+"
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmat
+h.sty"
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip41
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstex
+t.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen
+.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen102
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy
+.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen103
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn
+.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count80
@@ -72,7 +81,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.
+sty"
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks19
 \thm@bodyfont=\toks20
@@ -84,69 +94,84 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip46
 \dth@everypar=\toks24
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssy
+mb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfo
+nts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\latexsym.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latexsym.
+sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graph
+icx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyva
+l.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graph
+ics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.
+sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\g
+raphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvips.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\dvips.def"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\d
+vips.def"
 File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color
+.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\c
+olor.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: dvips.def on input line 147.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\dvipsnam.def"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\dvips
+nam.def"
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim
+.sty"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks26
 \verbatim@line=\toks27
 \verbatim@in@stream=\read1
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\enumerate.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\enumerat
+e.sty"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks28
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.st
+y"
+Package: array 2018/11/13 v2.4j Tabular extension package (FMi)
 \col@sep=\dimen113
 \ar@mcellbox=\box29
 \extrarowheight=\dimen114
@@ -155,8 +180,9 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \backup@length=\skip48
 \ar@cellbox=\box30
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\multicol.sty"
-Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol
+.sty"
+Package: multicol 2018/11/09 v1.8u multicolumn formatting (FMi)
 \c@tracingmulticols=\count92
 \mult@box=\box31
 \multicol@leftmargin=\dimen115
@@ -224,31 +250,39 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \c@obse=\count118
 \c@cond=\count119
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.cl
+o"
 File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.
+sty"
 Package: babel 2018/11/13 3.27 The Babel package
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch
+.def"
 File: switch.def 2018/11/13 3.27 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/arabi\bblopts.cfg
+
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.
+cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\
+english.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.
+def"
 File: babel.def 2018/11/13 3.27 Babel common definitions
 \babel@savecnt=\count120
 \U@D=\dimen124
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbab
+el.def")
 \bbl@dirlevel=\count121
 )
 \l@canadian = a dialect from \language\l@american 
@@ -266,10 +300,12 @@ File: babel.def 2018/11/13 3.27 Babel common definitions
 \belowcaptionskip=\skip52
 \bibindent=\dimen125
 
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption.sty
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\captio
+n.sty"
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.sty
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\captio
+n3.sty"
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen126
@@ -282,21 +318,25 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 )
 \c@caption@flags=\count129
 \c@ContinuedFloat=\count130
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/harvard\harvard.sty"
+)
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/harvard\harvar
+d.sty"
 Package: harvard 
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.st
+y"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )))
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.
+sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks30
 \inpenc@posthook=\toks31
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\latin1.def"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latin1.de
+f"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-))
-("Guidelines for authors.aux")
+)) ("Guidelines for authors.aux")
 \openout1 = `"Guidelines for authors.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -315,17 +355,19 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+msa on input line 12.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.
+fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.
+fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+lasy on input line 12.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
+("C:\Users\Alejandro\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 Non-PDF special ignored!
@@ -339,7 +381,7 @@ Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
 <special> color pop
-{C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+{C:/Users/Alejandro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 Non-PDF special ignored!
 <special> color push gray 0.5
 Non-PDF special ignored!
@@ -390,7 +432,16 @@ Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
 <special> color pop
-] ("Guidelines for authors.bbl") [4
+] [4
+Non-PDF special ignored!
+<special> color push  Black
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push  Black
+Non-PDF special ignored!
+<special> color pop
+] ("Guidelines for authors.bbl") [5
 Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
@@ -413,34 +464,35 @@ Non-PDF special ignored!
 <special> color pop
 ] ("Guidelines for authors.aux") ) 
 Here is how much of TeX's memory you used:
- 4260 strings out of 492946
- 58701 string characters out of 3135510
- 142543 words of memory out of 3000000
- 8079 multiletter control sequences out of 15000+200000
+ 4262 strings out of 492946
+ 60737 string characters out of 3124490
+ 142544 words of memory out of 3000000
+ 8081 multiletter control sequences out of 15000+200000
  21801 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,8n,40p,1271b,286s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
-.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\KEVINSTEVEN\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\KE
-VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.
-pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecrm0600.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
-2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\K
-EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700
-.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
-/dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on "Guidelines for authors.pdf" (4 pages, 136536 bytes).
+ <C:\Users\Alejandro\AppData\Local\MiKTeX\2.9
+\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Alejandro\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\Alejan
+dro\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C
+:\Users\Alejandro\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\e
+crm0600.pk> <C:\Users\Alejandro\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecbx1200.pk> <C:\Users\Alejandro\AppData\Local\MiKTeX\2.9\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Alejandro\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\Alejandro\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\A
+lejandro\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.p
+k> <C:\Users\Alejandro\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi
+600\ecbx1440.pk> <C:\Users\Alejandro\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecrm0900.pk> <C:\Users\Alejandro\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Users/Alejandro/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Alejandro
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
+Users/Alejandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr7.pfb>
+Output written on "Guidelines for authors.pdf" (5 pages, 140715 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
+ 378 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
