@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  6 JUN 2019 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  7 JUN 2019 11:06
 entering extended mode
 **"./Guidelines for authors.tex"
 ("Guidelines for authors.tex"
@@ -381,10 +381,7 @@ Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
 <special> color pop
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3
+] [3
 Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
@@ -402,7 +399,16 @@ Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
 <special> color pop
-] ("Guidelines for authors.bbl" [5
+] [5
+Non-PDF special ignored!
+<special> color push  Black
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push  Black
+Non-PDF special ignored!
+<special> color pop
+] ("Guidelines for authors.bbl") [6
 Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
@@ -415,15 +421,6 @@ Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
 <special> color pop
-Non-PDF special ignored!
-<special> color push  Black
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push  Black
-Non-PDF special ignored!
-<special> color pop
-]) [6
 Non-PDF special ignored!
 <special> color push  Black
 Non-PDF special ignored!
@@ -440,7 +437,7 @@ Non-PDF special ignored!
 Here is how much of TeX's memory you used:
  4264 strings out of 492946
  58737 string characters out of 3135510
- 142543 words of memory out of 3000000
+ 143543 words of memory out of 3000000
  8083 multiletter control sequences out of 15000+200000
  21801 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -460,12 +457,13 @@ EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700
 four/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX
 \2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppD
 ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on "Guidelines for authors.pdf" (6 pages, 144712 bytes).
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb>
+Output written on "Guidelines for authors.pdf" (6 pages, 154463 bytes).
 PDF statistics:
- 385 PDF objects out of 1000 (max. 8388607)
+ 390 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
