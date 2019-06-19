@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{EyH}
+Bradley Efron and Trevor Hastie.
+\newblock {\em Computer age statistical inference. Algorithms, Evidence, and
+  Data Science}.
+\newblock Cambridge, 2017.
+
+\bibitem{A1}
+Mohammad~Jafari Jozani and Sayed~Jamal Mirkamali.
+\newblock Improved attribute acceptance sampling plans based on maxima
+  nomination sampling.
+\newblock {\em Statistical Planning and Inference}, 2010.
+
+\bibitem{L}
+Brett Lantz.
+\newblock {\em Machine learning with R}.
+\newblock Packt Publishing, 2013.
+
+\bibitem{A0}
+Nicholas Squeglia.
+\newblock {\em Zero Acceptance Number Sampling Plans}.
+\newblock William Tony, 2008.
+
+\end{thebibliography}
