@@ -1,5 +1,12 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Marroquin}{2016}{AyR}
+Marroquin, E.  \harvardyearleft 2016\harvardyearright , {\em Planesmuestra:
+  Functions for Calculating Dodge Romig, MIL STD 105E and MIL STD 414
+  Acceptance Sampling Plan}.
+\newblock R package version 0.1.
+\newline\harvardurl{https://CRAN.R-project.org/package=Planesmuestra}
+
 \harvarditem{{R Core Team}}{2017}{R}
 {R Core Team}  \harvardyearleft 2017\harvardyearright , {\em R: A Language and
   Environment for Statistical Computing}, R Foundation for Statistical

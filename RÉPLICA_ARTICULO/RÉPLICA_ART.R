@@ -207,17 +207,22 @@ n=(log(b)/log(1-RQL(0.09977,10,125))) #Tamaño de muestra 18, c=0 y NCA 4%
 
 f_CO.NCA.NCL(0.001,0.01,18,0) #Gráfica 
 
-#Construcción curva AOQL
-P<-seq(0,1,0.01)
+#Construcción curva AOQL Figura 3
+P<-seq(0,1,0.0001)
 pa<-pbinom(0,50,P)
 AOQ<-pa*P
 x11()
-plot(P,AOQ,type="l",xlim = c(0,0.08),ylim = c(0,0.008))
+plot(P,AOQ,type="l",xlim = c(0,0.08),ylim = c(0,0.008),add=T,ylab="AOQ - Calidad saliente")
+abline(h=max(AOQ),col="red",lty=2,lwd=2)
+abline(v=0.02,col="red",lwd=2,lty=2)
+text(0.0445,0.0065, "n=50",cex = 1, col="black")
+text(0.0442,0.00626, "c=0",cex = 1, col="black")
+text(0.049,0.006, "Tamaño del lote=10000",cex = 1, col="black")
+text(0.015,0.0075, "AOQL=0.0073",cex = 1, col="black")
 
-max(AOQ)
 
-#Curvas para determinar valores AOQL's
-p=seq(0,1,0.01)
+#Curvas para determinar valores AOQL's Figura 4
+p=seq(0,1,0.001)
 n=0:140
 Pa=c()
 max_AOQ=c()
@@ -233,55 +238,98 @@ for (j in 1:length(c)) {
   }
   if(a==F){
     x11()
-    plot(n,max_AOQ,type = "l",ylim = c(0,0.10))
+    plot(n,max_AOQ,type = "l",ylim = c(0,0.1),xlim=c(140,0),xlab="Tamaño de muestra",ylab="AOQL")
+    text(125,0.095, "c=15",cex = 1, col="black")
+    text(40,0.027, "c=0",cex = 1, col="black")
     a=T
   }
   
-  lines(n,max_AOQ,type = "l",ylim = c(0,0.10),add=T)
+  lines(n,max_AOQ,type = "l",ylim = c(0,0.1),add=T)
 }
 
 #GRÁFICAS CURVAS CARACTERISTICAS DE OPERACIÓN
 #PAG 17
-n=c(5,3,2)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-  plot(P,Pa,type = "l",xlim=c(0,0.7))
-  abline(h=0.1,col="red")
-  a="K"
-  }
-  lines(P,Pa,add=T)
-}
+# Fijar en una matriz la secuencia de
+# los valores de los "no conformes"
+j<-seq(0,0.75,0.125)
+p.mat<-matrix(rep(j,3),ncol=3,byrow=FALSE)
+# Integrar los resultados en una matriz
+n1<-phyper(0,j*8,(1-j)*8,5)
+n2<-phyper(0,j*8,(1-j)*8,3)
+n3<-phyper(0,j*8,(1-j)*8,2)
+OC.mat<-cbind(n1,n2,n3)
+# Plotear ambas matrices
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.2,0.26, "n=5",cex = 1, col="black")
+text(0.3,0.33, "n=3",cex = 1, col="black")
+text(0.38,0.4, "n=2",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
+
 
 #PAG 18
-n=c(13,8,5,3,2)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+# Fijar en una matriz la secuencia de
+# los valores de los "no conformes"
+j<-seq(0,0.75,0.0666)
+p.mat<-matrix(rep(j,5),ncol=5,byrow=FALSE)
+# Integrar los resultados en una matriz
+n1<-phyper(0,j*15,(1-j)*15,13)
+n2<-phyper(0,j*15,(1-j)*15,8)
+n3<-phyper(0,j*15,(1-j)*15,5)
+n4<-phyper(0,j*15,(1-j)*15,3)
+n5<-phyper(0,j*15,(1-j)*15,2)
+OC.mat<-cbind(n1,n2,n3,n4,n5)
+# Plotear ambas matrices
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.2,0.3, "n=5",cex = 1, col="black")
+text(0.3,0.36, "n=3",cex = 1, col="black")
+text(0.38,0.4, "n=2",cex = 1, col="black")
+text(0.14,0.25, "n=8",cex = 1, col="black")
+text(0.08,0.2, "n=13",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
-#PAG 19
-n=c(32,20,13,8,5,3)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+#PAG 18
+# Fijar en una matriz la secuencia de
+# los valores de los "no conformes"
+j<-seq(0,0.76,0.04)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+# Integrar los resultados en una matriz
+n0<-phyper(0,j*25,(1-j)*25,20)
+n1<-phyper(0,j*25,(1-j)*25,13)
+n2<-phyper(0,j*25,(1-j)*25,8)
+n3<-phyper(0,j*25,(1-j)*25,5)
+n4<-phyper(0,j*25,(1-j)*25,3)
+n5<-phyper(0,j*25,(1-j)*25,2)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+# Plotear ambas matrices
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.23,0.3, "n=5",cex = 1, col="black")
+text(0.3,0.36, "n=3",cex = 1, col="black")
+text(0.38,0.4, "n=2",cex = 1, col="black")
+text(0.16,0.25, "n=8",cex = 1, col="black")
+text(0.11,0.2, "n=13",cex = 1, col="black")
+text(0.07,0.15, "n=20",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG 20
 n=c(32,20,13,8,5,3)
@@ -465,3 +513,7 @@ n=(log(b)/log(1-RQL(0.09977,10,125)))
 f_milstd105e(N=15000,L="II",type="n",NCA=4) #Tamaño de muestra 3, nivel de aceptación 1%
 RQL(0.099,21,315)
 n=(log(b)/log(1-RQL(0.099,21,315)))
+
+OC2c(5,0,1,type = "hypergeom",8)
+x <- OC2c(5,0, type="hypergeom", N=8, pd=seq(0,0.7, 0.125))
+plot(x)

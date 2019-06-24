@@ -91,7 +91,7 @@ Lo primero que trata de mostrar Squeglia en su libro, son los efectos de los núm
   \caption{Efecto del número de aceptación en la curva característica de operación}
 \end{figure}
 
-Otro aspecto importante que se compara en este libro, es el tamaño de muestra necesario para dos niveles de AQL establecidos, en la tabla 1 se observa la comparación que obtuvimos, y además, le añadimos los riesgos del productor que se podrían dar con cada uno de los planes de muestreo.
+Otro aspecto importante que se compara en este libro, es el tamaño de muestra necesario para dos niveles de AQL establecidos, en la tabla 1 se observa la comparación que obtuvimos con la ayuda del paquete \citeasnoun{AyR} para el ANSI Z1.4 y con código propio para los planes c=0, y además, le añadimos los riesgos del productor que se podrían dar con cada uno de los planes de muestreo.
 
 \begin{table}[htbp]
   \centering
@@ -112,7 +112,41 @@ Otro aspecto importante que se compara en este libro, es el tamaño de muestra ne
 
 Como lo menciona Squeglia, se logra apreciar que los planes c=0 brindan una protección igual o mayor al nivel de riesgo del consumidor de 0.1. También se observa que se realiza menos inspección (el tamaño de muestra es considerablemente inferior para valor de AQL mayores). 
  
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/Figura3.pdf}
+  \caption{Curva AOQL}
+\end{figure}
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/Figura4.pdf}
+  \caption{Curvas para determinar valores AOQL}
+\end{figure}
+
+Finalmente, el autor realiza curvas de operación para diferentes números de aceptación por rangos de tamaños de lotes, estas curvas se presentarán como anexo. 
+
+\section{Anexos}
+\subsection{Anexo 1: Curvas de operación}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO1.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 2 - 8}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO2.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 9 - 15}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO3.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 16 - 25}
+\end{figure}
+
+\subsection{Anexo 2: Código R}
 
     \bibliography{references}
 
