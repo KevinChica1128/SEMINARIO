@@ -30,11 +30,20 @@
 
 \RequirePackage[T1]{fontenc}                        % fuente utilizada para incorporar simbolos acentuados y otros símbolos
 \RequirePackage{amsmath,amsthm,amssymb,latexsym}    % herramientas para manejo matemático y símbolos matemáticos especiales
-\RequirePackage[dvips]{graphicx,color}              % herramientas para inclusión de gráficos y el manejo del color
+\RequirePackage{ifpdf}
+\ifpdf
+    \RequirePackage{graphicx,color}%                % herramientas para inclusión de gráficos y el manejo del color
+    \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\else
+    \RequirePackage[dvips]{graphicx,color}%
+    \DeclareGraphicsExtensions{.eps}
+\fi
+
 \RequirePackage{verbatim}                           % herramienta para incluir texto en fuente mono-espaciada y para comentarios
 \RequirePackage{enumerate}                          % herramienta para el manejo de listas enumeradas y encajadas
 \RequirePackage{array}                              % utilizado para darle formato al encabezado de las tablas
 \RequirePackage{multicol}
+\RequirePackage{multirow, array}
 
 
 

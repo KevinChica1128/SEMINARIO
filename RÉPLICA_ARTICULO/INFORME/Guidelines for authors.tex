@@ -2,13 +2,15 @@
 % This is a general template file for preparing an article for Revista Colombiana de Estadística
 % *************************************************************************************
 \documentclass[english]{revcoles}
+\usepackage[top=3cm,,bottom=3cm]{geometry}
 \usepackage[latin1]{inputenc}
+\usepackage{graphicx}
 %
 \hyphenation{}
 % //// --------------------------------------------------------------------------------
 \begin{document}
 
-\title[maintitle = Tarea 1,
+\title[maintitle = Réplica libro: Zero Acceptance Number Sampling Plans \citeasnoun{A0},
 ]
 
 \begin{authors}
@@ -33,63 +35,83 @@
                 country = Colombia]
 \end{institutions}
 
-\section{Antecedentes trabajo de grado}
-Se presentó una gran dificultad en la búsqueda de antecedente recientes sobre nuestro trabajo de grado, siendo conscientes de que los artículos posteriormente presentados no son ideales para el proceso de replicación, creemos que son los que más se acercan al ideal y con los cuales se podría tratar de hacer un tipo de replicación.
+\begin{secondaryabstract}
+Se dan las instrucciones para la presentación de trabajos al XXIX Simposio Internacional de Estad\'istica, utilizando \LaTeX.
+Este texto está escrito en el formato de un art\'iculo (\emph{Guidelines for authors.tex}) y puede utilizarse
+como plantilla, reemplazando este contenido por el del trabajo a presentar. Se requieren los archivos \emph{revcoles.cls},
+\emph{references.bib} y \emph{graph\_example.eps}.\\%
+\'Esta plantilla pertenece a la Revista Colombiana de Estad\'istica. 
+%
+\keywords{ Formato en \LaTeX\ para documentos, Simposio de Estad\'istica}
+\end{secondaryabstract}
 
-\subsection{Planes de muestreo para número de aceptación cero}
-Cuando se habla de control estadístico de calidad siempre se ha aceptado que no existe producto perfecto y que el ``defecto'' casi siempre existe en los lotes producidos, lo que se quiere lograr a la larga es disminuir esta cantidad de ``defectuosos'' logrando así cumplir con los estándares de calidad que tiene cada organización. 
+\section{Introducción}
+\citeasnoun{A0} nos muestra en su libro una comparación bastante completa entre el muestreo de aceptación y rechazo para atributos por el método MIL-STD-105E/ANSI Z1.4 y los planes de muestreo c=0, dichas comparaciones se realizan en términos de tamaños de muestra, curvas características de operación y del AOQL (Máximo porcentaje de defectuosos esperado), además, ambos métodos no son totalmente independientes, los planes de muestreo c=0 tienen una relación bastante fuerte con los planes ANSI Z1.4, la cual también es abordada en este libro. En este artículo se tratará de replicar algunos de los resultados y comparaciones obtenidos por Squeglia. Para que este sea legible, se darán unos conceptos introductorios y se contextualizará al lector acerca del funcionamiento de estos dos planes de muestreo de aceptación.
 
-Actualmente las organizaciones no se están conformando con tener una cantidad de defectuosos mínima, por el contrario, quieren que sus lotes no contengan ningún artículo o producto defectuoso. Esto lleva a que sean necesarias el uso de estrategias de muestreo que logren obtener una muestra 0 defectuosa con una confianza alta de que el lote este ``bueno'' (libre de productos defectuosos).
+Algunos conceptos claves, que se mencionarán de aquí en adelante son:
+\begin{itemize}
+\item AQL (aceptable quality level). Representa el más pobre nivel de calidad del proceso del proveedor que el consumidor considera aceptable como un proceso promedio. La probabilidad de aceptar este nivel de calidad debe ser alta y se denota por $(1-\alpha)$, donde $\alpha$ es el riesgo del productor.
+\item LTPD (lot tolerance percent defective). Es el peor nivel de calidad que el consumidor esta dispuesto a aceptar en un lote individual. También se le conoce como nivel de calidad rechazable y se denota por $\beta$(riesgo de consumidor).
+\end{itemize}
+El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que el plan de muestreo rechazará. Se desea designar un plan de muestreo que acepte un lote de producto particular en el AQL la mayoría de las veces y que lo rechace en el RQL la mayor parte del tiempo.
+\begin{itemize}
+\item Curva Característica de Operación (OC). Mide el desempeño del plan de muestreo de aceptación. Da la probabilidad de aceptar un lote dependiendo del tamaño del lote, de la proporción de defectuosos en el lote,del tamaño de la muestra y del número de aceptación.
+\item AOQ: Calidad Promedio de Salida. Proporción promedio de unidades defectuosas entre aquellas unidades que superan el proceso de inspección. (Este concepto es una forma de medir el efecto de un plan de muestreo sobre la calidad que se tendrá después de aplicarlo). Se calcula como $AOQ=P_a*P$, donde $P_a$ es la probabilidad de aceptación y $P$ es la proporción real de defectuosos.
+\item AOQL: Máxima Calidad Promedio de Salida. Se calcula como $Max(AOQ)$
+\end{itemize}
 
-En nuestro caso particular, refiriéndonos al trabajo de grado, tenemos lotes de plantas de cítricos que pueden estar infectadas con diversas enfermedades y no es posible aceptar lotes con una o más plantas infectadas, ya que esto podría implicar pérdidas enormes de recursos invirtiendo en el mantenimiento de estas plantas y al final no se obtendrían las cosechas o las calidades esperadas, por lo que es necesario conocer y aplicar un plan de muestreo que involucre como condición principal el no aceptar lotes que en la muestra tengan plantas infectadas, así pues, \citeasnoun{A0} nos muestra en su libro varias alternativas que podemos utilizar; como cada situación es distinta y no existe una verdad absoluta en cuanto a qué plan de muestreo usar y en qué situación, Nicholas también compara estas alternativas para que nosotros optemos por la que mejor nos convenga. 
+\section{MIL-STD-105E/ANSI Z1.4}
+La norma MIL-STD-105E es un esquema de muestreo que ideó el gobierno de Estados Unidos para sus adquisiciones durante la Segunda Guerra Mundial. MIL-STD-105E está diseñada para muestreo de atributos lote por lote. Se usa AQL entre 0,10 a 10\%. Los planes AQL tienen eficacia máxima si rechaza suficientes lotes para que sea conveniente mejorar la calidad del producto cuando el fabricante produce un nivel de calidad peor que el AQL y si el plan rechaza muy pocos lotes cuando el fabricante produce un nivel de calidad mejor que el AQL.
 
-Consideramos importante presentar estas metodologías en el curso de seminario, ya que, en las técnicas de control de calidad empleadas en la práctica, y en casi cualquier tipo de industria, las decisiones de aceptar o rechazar lotes normalmente se basan en muestras extraídas de diferentes lotes y en la construcción de un plan de muestreo de aceptación. Además, el uso de estas técnicas no se ha quedado solo en la industria, ésta se ha expandido al ámbito de la salud, logrando cosas importantes como detectar problemas de calidad en métodos o procesos hospitalarios y encontrando problemas de cobertura en programas de salud. Esperamos que con la presentación de este tema, los compañeros posteriormente egresados, tengan claro el uso de esta metodología y logren aplicarla en su vida laboral cuando nos encontremos con problemas que impliquen control de calidad en general y también, cuando tengamos exigencias de 0 ``defectos'', que  va a ser muy común, ya que las normas cada vez son mas exigentes y las industrias o productores deben estar en un proceso de mejoramiento continúo, hasta llegar al punto donde no se acepte imperfecciones o defectos.
+Para utilizar un plan de muestreo indexado según AQL como la norma MIL-STD-105E se deben seguir los siguientes pasos:
+\begin{itemize}
+\item Establecer el valor de AQL.
+\item Determinar el tamaño del lote N.
+\item Determinar el nivel de inspección: generalmente inspección nivel II (normal).
+\item Determinar el plan de muestreo: muestreo sencillo, doble o múltiple.
+\item Determinar la clave de tamaño de muestra (letra)
+\item Determinar el tamaño de muestra y el número de aceptación
+\item Seleccionar la muestra: se debe tomar del lote al azar.
+\item Inspeccionar la muestra: se cuentan los artículos defectuosos. Si el número que resulta no supera el número de aceptación que se encontró en la tabla se acepta el lote. En caso contrario se rechaza.
+\end{itemize}
 
-\subsection{Planes de muestreo de aceptación de atributos mejorados basados en muestreo de nominaciones máximas}
-Este artículo, de los autores \citeasnoun{A1}, demuestra el uso de la técnica de muestreo de nominación máxima (MNS) en diseño y evaluación de planes de muestreo de aceptación únicos para atributos. Se estudian tres tipos de niveles críticos de calidad: AQL(Acceptable Quality Level), LTPD(Lot Tolerance Percent Defective) y EQL(equilibrium quality level). 
+\section{Planes de muestreo de aceptación c=0}
+Los planes ``Aceptar en ninguno'', comúnmente llamados planes C = 0, son planes de muestreo de lotes para datos de atributos diseñados de tal manera que si se encuentra un defecto en la muestra inspeccionada, el lote se rechaza. El tamaño de muestra se puede encontrar directamente con la fórmula
+$$n=\frac{ln(\beta)}{ln(1-LTPD)}$$ 
+donde se deben determinar valores para $\beta$(usualmente 0.1) y $LTPD$ mencionados en la introducción. Se procede igual que en el método anterior, pero en este caso, si el número de defectuosos es mayor o igual a 1, se rechaza el lote.
 
-La técnica de muestreo de nominación máxima (MNS) consiste, en términos muy generales, en extraer primeramente una muestra al azar de $nxk$ unidades de estudio(artículos o productos) del lote, y dividirlos aleatoriamente en n conjuntos, cada uno de tamaño k, posteriormente, dentro de cada conjunto, se utiliza un método de clasificación, para ordenar los artículos de mejor a peor calidad. El proceso de clasificación se puede realizar según el grado aparente o la posibilidad de que el elemento esté ``defectuoso''. También se puede realizar en función del valor de una variable auxiliar correlacionada y fácil de observar. Finalmente, de cada uno de los n conjuntos, se seleccionaran ciertos artículos en función de estadísticos de orden.
+\section{Comparación y resultados}
+Mientras el ANSI (MIL-STD-105) es un sistema AQL (protege al productor - Si la calidad está en el AQL, nos aseguramos de que se pueda aceptar el lote), C = 0 es un sistema LTPD (protege al consumidor - si la calidad está en el LTPD nos permite asegurarnos de que rechazamos).
 
-En este artículo se analiza el efecto del tamaño de la muestra y el número de aceptación en el rendimiento de los planes MNS propuestos mediante la curva característica de operación(OC). Entre otros resultados, se muestra que los planes de muestreo de aceptación de MNS con un tamaño de muestra más pequeño y un número de aceptación mayor se desempeñan mejor que los planes de muestreo de aceptación comúnmente usados para atributos basados en la técnica de muestreo aleatorio simple(SRS). De hecho, los planes de muestreo de aceptación MNS dan como resultado curvas de OC que, en comparación con sus contrapartes de SRS, están mucho más cerca de la curva de OC ideal.  
+Lo primero que trata de mostrar Squeglia en su libro, son los efectos de los números de aceptación en la curva OC, para ello compara dos planes de muestreo, uno con un tamaño de muestra $n=125$ y un número de aceptación $c=10$, y el otro con un tamaño de muestra $n=18$ y un número de aceptación $c=0$. La figura 1 es la obtenida por nosotros por medio del software \citeasnoun{R}, para evaluar estos dos planes de muestreo. En ella se confirma lo que Squeglia afirmaba ``\textit{Con el número de aceptación establecido en cero, tenemos una mayor protección en el nivel LTPD con un tamaño de muestra de 18, en comparación con un plan de muestreo de ANSI Z1.4 que tiene un tamaño de muestra de 125 con un número de aceptación de 10}''
 
-Estos planes propuestos se pueden usar de manera eficiente para situaciones en que el manejo de la calidad de los artículos es difícil, destructiva o muy costosa, pero los elementos a muestrear pueden clasificarse entre sí (según el criterio subjetivo o alguna medida auxiliar) en función de su nivel de calidad. 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/Figura2.pdf}
+  \caption{Efecto del número de aceptación en la curva característica de operación}
+\end{figure}
 
-Este artículo pierde algo de importancia frente al primero, ya que en nuestro contexto, las plantas no pueden ser clasificadas fácilmente de mejor a peor calidad por las características de las enfermedades, estás son asintomáticas en la etapa(vivero) en la cual se aplicará el muestreo. Finalmente, sin esta clasificación, se llegará a los mismos resultados que generaría un muestreo de aceptación basado en el muestreo aleatorio simple. 
+Otro aspecto importante que se compara en este libro, es el tamaño de muestra necesario para dos niveles de AQL establecidos, en la tabla 1 se observa la comparación que obtuvimos, y además, le añadimos los riesgos del productor que se podrían dar con cada uno de los planes de muestreo.
 
-\section{Efron \& Hastie (2017)}
-\subsection{Redes neuronales y aprendizaje profundo(cap 18)}
-El aprendizaje profundo y las redes neuronales hacen parte de la inteligencia artificial o aprendizaje automatizado, esto es, que por medio de un conjunto de algoritmos se intente modelar abstracciones de alto nivel en datos usando arquitecturas compuestas de transformaciones no lineales múltiples.
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{c|c|c|c|c}
+    \hline
+    \textbf{Método} & \textbf{AQL} & \textbf{n} & \textbf{c} & \textbf{$\alpha$} \\
+    \hline
+    \multirow{2}[2]{*}{\textbf{ANSI Z1.4}} & 0.01  & 125   & 3     & 0.03745 \\
+          & 0.04  & 125   & 10    & 0.01191 \\
+    \hline
+    \multirow{2}[2]{*}{\textbf{Planes C=0}} & 0.01  & 42    & 0     & 0.34434 \\
+          & 0.04  & 18    & 0     & 0.52040 \\
+    \hline
+    \end{tabular}%
+    \caption{Comparación tamaños de muestra ambos planes}
+  \label{tab:addlabel}%
+\end{table}%
 
-Las redes neuronales como su nombre lo indica, trata de asemejarse a lo que vendría siendo un cerebro, conectando ``neuronas artificiales'' de manera que simulen el aprendizaje humano, como puede llegar a ser el reconocimiento de un rostro, la compresión de algún lenguaje o incluso el reconocimiento de voz. Esto es posible gracias al análisis de cantidades gigantescas de datos y en algunos casos, se debe realizar en procesadores de alto rendimiento.
-
-Este tema es interesante para nosotros ya que además de hacer uso de la estadística para entrenar estas redes, las cosas que se puede llegar a realizar en diferentes áreas son muy interesantes y podrían facilitar y automatizar de gran manera muchos procesos utilizando la tecnología. Por ejemplo, en la medicina, se podría usar este método para el reconocimiento de enfermedades en la piel por medio de una app para teléfonos inteligentes o en la agricultura, con la recolección de información por medio de drones para la toma de decisiones.
-
-\subsection{Bosques aleatorios e impulso(cap 17)}
-El concepto de bosques aleatorios surge con los árboles de decisión o diagramas de decisión, un árbol de decisión es un ``mapa'' de los posibles resultados de una serie de decisiones relacionadas, esto permite que una organización o individuo comparen diferentes acciones con el fin de maximizar la probabilidad de llegar al resultado esperado, esto puede ser por ejemplo conocer cuál es la ruta más óptima para llegar al trabajo o cuál va a ser la campaña y/o producto que me va a generar la mayor utilidad.
-
-Los árboles de decisión se llaman de esta manera ya que asemejan las ramificaciones de los arboles de forma que comienza con un único nodo y se va ramificando en torno a los resultados que arroja (decisiones que se toman), cada nodo tiene una cierta probabilidad de tomar x o y opción y de esta manera se va expandiendo hasta llegar a una única respuesta, es aquí cuando termina.
-
-¿Qué sucede cuando tenemos gran cantidad de datos? Bueno, pasamos de tener un árbol de decisión a una infinidad de árboles, esto en función a la cantidad de datos y lo que queramos hacer con estos, así pues, pasamos a tener un bosque aleatorio. Así como lo son las redes neuronales, los bosques aleatorios logran tener excelentes resultados en cuanto al modelamiento y la inteligencia artificial.
-
-Nos vimos interesados en este tema ya que además de ser útil y moderno, este método facilita en gran medida el proceso de toma de decisiones tanto en organizaciones como en proyectos personales, además, es muy utilizado en problemas de clasificación(clasificar en clientes buenos y malos, clasificar modelos de coches distintos, clasificación de muestras de ADN para determinar enfermedades,entre otros), arrojando muy buenos resultados.
-
-\section{Lantz (2013) o Torgo (2017)}
-\subsection{Aprendizaje probabilístico - clasificación usando bayes ingenuo(cap 4 - Lantz 2013)}
-El aprendizaje probabilístico, expuesto por \citeasnoun{L} en el cuarto capitulo de su libro, es un tema que nos pareció muy interesante ya que utiliza la estadística bayesiana, más específicamente el teorema de Bayes, para tratar de predecir o clasificar, modelando la incertidumbre por medio de probabilidades y utilizando internamente pruebas de hipótesis. 
-
-Investigando un poco a fondo sobre este tema, nos dimos cuenta que es un método muy utilizado en la actualidad en diversos contextos por su uso práctico y los buenos resultados en la mayoría de los casos. Por ejemplo, se puede utilizar para algo muy trivial, como clasificar una persona en hombre o mujer basándonos en las características de sus medidas: peso, altura y número de pie; pero, también se puede usar para problemas más complejos y muy útiles como por ejemplo, el que plantea el autor, filtrar el spam de los teléfonos celulares para eliminarlos automáticamente y que esto no se convierta en una molestia para los usuarios. Este último ejemplo, nos llamó mucho la atención y de aquí que este tema ocupara la primera posición, ya que los llamados ``spam'' son en la mayoría de casos cadenas de texto haciendo publicidad o informándonos acerca de un ``premio'' que ganamos sin siquiera participar, entre otros. Con la proliferación de datos no estructurados, la clasificación de texto o la categorización de texto ha encontrado muchas aplicaciones en la clasificación de temas, análisis de sentimientos, identificación de autoría, detección de correo no deseado, etc. 
-
-A pesar de que actualmente hay muchos algoritmos de clasificación disponibles, el Bayes ingenuo sigue siendo uno de los clasificadores más antiguos y populares. Por un lado, la implementación del bayes ingenuo es simple y, por otro lado, requiere menos cantidades de datos de entrenamiento. Sin embargo, el Bayes ingenuo se desempeña pobremente en comparación con otros clasificadores en la clasificación de texto. Como resultado, esto hace que el clasificador bayesiano ingenuo sea inutilizable en algunos casos a pesar de la simplicidad e intuición del modelo. Pero creemos que sería muy útil tanto para nosotros como para el grupo en general, saber como funciona este método y ver los posibles usos que este tiene en la vida cotidiana, ya que esto funcionaria como introducción al tema de algoritmos clasificadores y posiblemente nos facilite comprender la lógica y el funcionamiento de los nuevos algoritmos de clasificación que existen en la actualidad.
-\subsection{Divide y vencerás - Clasificación usando reglas y arboles de decisión(cap 5 - Lantz 2013)}
-La clasificación usando reglas y arboles de decisión, expuesto por \citeasnoun{L} en el quinto capitulo de su libro, al igual que el tema anterior, nos pareció interesante ya que básicamente, es un sistema de aprendizaje supervisado que aplica la estrategia ``divide y vencerás'' para hacer la clasificación, implementando métodos y técnicas para la realización de procesos inteligentes, representando así el conocimiento y el aprendizaje, con el propósito de automatizar tareas. Su utilización y metodología es algo semejante al tema anterior, ya que dado un conjunto de datos se fabrican diagramas de construcciones lógicas, muy similares a los sistemas de predicción basados en reglas, que sirven para representar y categorizar una serie de condiciones que ocurren de forma sucesiva, para la resolución de un problema.
-
-\textit{``Por su estructura son fáciles de comprender y analizar; su utilización cotidiana se puede dar en diagnósticos médicos, predicciones meteorológicas, controles de calidad, y otros problemas que necesiten de análisis de datos y toma de decisiones'', lo que quiere decir que los árboles de decisión pueden ser usados en cualquier ámbito sin importar que sea laboral o personal, siempre y cuando implique toma de decisiones con cierto grado de incertidumbre} (Calancha Zuniga, Carrión Bárcena, Cori Vargas, \& Villa Torres, 2010, pág. 2).
-
-Es evidente que obtener un mecanismo como este sería muy útil debido a que podríamos predecir comportamientos futuros a partir de los comportamientos observados en el pasado. Por ejemplo, a partir de los síntomas que tenemos observados en enfermos anteriores, y sabiendo ya si han desarrollado o no cierta enfermedad, podríamos extraer patrones que nos permitieran predecir si un paciente nuevo, aquejado de ciertos síntomas, desarrollará o no la misma enfermedad, lo que nos permitiría adelantarnos a su tratamiento. Otro ejemplo que es muy usado en la actualidad se encuentra en el mundo de los créditos bancarios, a partir de los comportamientos de los clientes antiguos con respecto a la morosidad o no de sus pagos del crédito concedido, podemos inferir qué nuevos clientes pueden ser los más convenientes para la concesión de un crédito, es decir, cuáles de ellos tienen más probabilidad de hacer frente al pago del mismo y cuáles más probabilidad de dejarlo sin pagar. 
-
-Para nosotros sería importante presentar este tema en seminario, ya que es una técnica muy utilizada por sus buenos resultados, y con ella, se abre paso a otra técnica mucho más potente que son los bosques aleatorios, los cuales utilizan una serie de arboles de decisión con el fin de mejorar la tasa de clasificación; por lo tanto, exponer este tema y ver sus posibles aplicaciones puede ser muy útil para todos, ya que en la vida laboral nos podemos encontrar tranquilamente con problemas de este tipo, que deben ser solucionados utilizando esta metodología.
-
-\nocite{EyH}
+Como lo menciona Squeglia, se logra apreciar que los planes c=0 brindan una protección igual o mayor al nivel de riesgo del consumidor de 0.1. También se observa que se realiza menos inspección (el tamaño de muestra es considerablemente inferior para valor de AQL mayores). 
+ 
 
 
     \bibliography{references}
