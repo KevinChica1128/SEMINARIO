@@ -1,8 +1,14 @@
 \begin{thebibliography}{1}
 
+\bibitem{AyR}
+Erick Marroquin.
+\newblock {\em Planesmuestra: Functions for Calculating Dodge Romig, MIL STD
+  105E and MIL STD 414 Acceptance Sampling Plan}, 2016.
+\newblock R package version 0.1.
+
 \bibitem{A0}
 Nicholas Squeglia.
 \newblock {\em Zero Acceptance Number Sampling Plans}.
-\newblock William Tony, 2008.
+\newblock American Society for Quality, 2008.
 
 \end{thebibliography}

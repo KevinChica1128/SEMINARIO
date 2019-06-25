@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  25 JUN 2019 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  25 JUN 2019 16:51
 entering extended mode
 **"./presentacion SEMINARIO T1.tex"
 ("presentacion SEMINARIO T1.tex"
@@ -763,26 +763,96 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip69
 \JustifyingParindent=\skip70
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\multicol.sty"
+Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
+\c@tracingmulticols=\count159
+\mult@box=\box54
+\multicol@leftmargin=\dimen188
+\c@unbalance=\count160
+\c@collectmore=\count161
+\doublecol@number=\count162
+\multicoltolerance=\count163
+\multicolpretolerance=\count164
+\full@width=\dimen189
+\page@free=\dimen190
+\premulticols=\dimen191
+\postmulticols=\dimen192
+\multicolsep=\skip71
+\multicolbaselineskip=\skip72
+\partial@page=\box55
+\last@line=\box56
+\maxbalancingoverflow=\dimen193
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@gfirstbox=\box59
+\mult@firstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\c@columnbadness=\count165
+\c@finalcolumnbadness=\count166
+\last@try=\dimen194
+\multicolovershoot=\dimen195
+\multicolundershoot=\dimen196
+\mult@nat@firstbox=\box78
+\colbreak@box=\box79
+\mc@col@check@num=\count167
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+\multirow@colwidth=\skip73
+\multirow@cntb=\count168
+\multirow@dima=\skip74
+\bigstrutjot=\dimen197
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen198
+\ar@mcellbox=\box80
+\extrarowheight=\dimen199
+\NC@list=\toks46
+\extratabsurround=\skip75
+\backup@length=\skip76
+\ar@cellbox=\box81
+)
 ("presentacion SEMINARIO T1.aux"
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
 )
 \openout1 = `"presentacion SEMINARIO T1.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -821,17 +891,17 @@ LaTeX Font Info:    ... okay on input line 19.
 
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/context/base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count159
-\scratchdimen=\dimen188
-\scratchbox=\box54
-\nofMPsegments=\count160
-\nofMParguments=\count161
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count162
-\MPscratchDim=\dimen189
-\MPnumerator=\count163
-\makeMPintoPDFobject=\count164
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count169
+\scratchdimen=\dimen256
+\scratchbox=\box82
+\nofMPsegments=\count170
+\nofMParguments=\count171
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count172
+\MPscratchDim=\dimen257
+\MPnumerator=\count173
+\makeMPintoPDFobject=\count174
+\everyMPtoPDFconversion=\toks48
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -846,8 +916,8 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 19.
+\AtBeginShipoutBox=\box83
+Package hyperref Info: Link coloring OFF on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -855,68 +925,68 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count165
+\c@section@level=\count175
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 ("presentacion SEMINARIO T1.out") ("presentacion SEMINARIO T1.out")
 \@outlinefile=\write5
 \openout5 = `"presentacion SEMINARIO T1.out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 19.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 19.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 19.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 19.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 19.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 19.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 19.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 19.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 19.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 19.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 19.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 19.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 19.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 19.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 19.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 19.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 19.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 19.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 19.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 19.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 19.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 19.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-9.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 2
+1.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-19.
+21.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 19.
+ut line 21.
 
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/translator\translato
 r-basic-dictionary-English.dict
@@ -942,13 +1012,13 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 19.
+LaTeX Info: Redefining \selectfont on input line 21.
 
 ("presentacion SEMINARIO T1.nav")
-Overfull \hbox (38.68858pt too wide) in paragraph at lines 19--19
+Overfull \hbox (38.68858pt too wide) in paragraph at lines 21--21
  [][][][]  
  []
 
@@ -965,12 +1035,365 @@ Overfull \hbox (39.27887pt too wide) has occurred while \output is active
 
 [2
 
-] ("presentacion SEMINARIO T1.bbl")
+]
 Overfull \hbox (39.27887pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [3
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 44.
+
+(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex/latex/sansmathaccent\ot1ma
+thkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[4
+
+]
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[5
+
+]
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[6
+
+]
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[7
+
+]
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[8
+
+]
+<FigurasUV/Figura2.pdf, id=284, 1027.84pt x 545.03625pt>
+File: FigurasUV/Figura2.pdf Graphic file (type pdf)
+<use FigurasUV/Figura2.pdf>
+Package pdftex.def Info: FigurasUV/Figura2.pdf  used on input line 92.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[9
+
+ <./FigurasUV/Figura2.pdf>]
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[10
+
+]
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[11
+
+]
+<FigurasUV/Figura3.pdf, id=374, 1027.84pt x 545.03625pt>
+File: FigurasUV/Figura3.pdf Graphic file (type pdf)
+<use FigurasUV/Figura3.pdf>
+Package pdftex.def Info: FigurasUV/Figura3.pdf  used on input line 126.
+(pdftex.def)             Requested size: 349.46098pt x 185.30988pt.
+
+Overfull \hbox (5.26566pt too wide) in paragraph at lines 126--126
+ [] 
+ []
+
+
+Overfull \vbox (11.5295pt too high) detected at line 126
+ []
+
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[12
+
+ <./FigurasUV/Figura3.pdf>]
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
+]
+<FigurasUV/Figura4.pdf, id=433, 1027.84pt x 545.03625pt>
+File: FigurasUV/Figura4.pdf Graphic file (type pdf)
+<use FigurasUV/Figura4.pdf>
+Package pdftex.def Info: FigurasUV/Figura4.pdf  used on input line 138.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+ <./FigurasUV/Figura4.pdf>]pdfTeX warning (ext4): destination with the same ide
+ntifier (name{tab:addlabel}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.156 \end{frame}
+                 
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[15
+
+]
+<FigurasUV/CO1.pdf, id=491, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO1.pdf Graphic file (type pdf)
+<use FigurasUV/CO1.pdf>
+Package pdftex.def Info: FigurasUV/CO1.pdf  used on input line 164.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[16
+
+ <./FigurasUV/CO1.pdf>]
+<FigurasUV/CO2.pdf, id=522, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO2.pdf Graphic file (type pdf)
+<use FigurasUV/CO2.pdf>
+Package pdftex.def Info: FigurasUV/CO2.pdf  used on input line 172.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[17
+
+ <./FigurasUV/CO2.pdf>]
+<FigurasUV/CO3.pdf, id=552, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO3.pdf Graphic file (type pdf)
+<use FigurasUV/CO3.pdf>
+Package pdftex.def Info: FigurasUV/CO3.pdf  used on input line 180.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[18
+
+ <./FigurasUV/CO3.pdf>]
+<FigurasUV/CO4.pdf, id=582, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO4.pdf Graphic file (type pdf)
+<use FigurasUV/CO4.pdf>
+Package pdftex.def Info: FigurasUV/CO4.pdf  used on input line 188.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[19
+
+ <./FigurasUV/CO4.pdf>]
+<FigurasUV/CO5.pdf, id=613, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO5.pdf Graphic file (type pdf)
+<use FigurasUV/CO5.pdf>
+Package pdftex.def Info: FigurasUV/CO5.pdf  used on input line 196.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[20
+
+ <./FigurasUV/CO5.pdf>]
+<FigurasUV/CO6.pdf, id=643, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO6.pdf Graphic file (type pdf)
+<use FigurasUV/CO6.pdf>
+Package pdftex.def Info: FigurasUV/CO6.pdf  used on input line 204.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[21
+
+ <./FigurasUV/CO6.pdf>]
+<FigurasUV/CO7.pdf, id=674, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO7.pdf Graphic file (type pdf)
+<use FigurasUV/CO7.pdf>
+Package pdftex.def Info: FigurasUV/CO7.pdf  used on input line 212.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[22
+
+ <./FigurasUV/CO7.pdf>]
+<FigurasUV/CO8.pdf, id=705, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO8.pdf Graphic file (type pdf)
+<use FigurasUV/CO8.pdf>
+Package pdftex.def Info: FigurasUV/CO8.pdf  used on input line 220.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[23
+
+ <./FigurasUV/CO8.pdf>]
+<FigurasUV/CO9.pdf, id=736, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO9.pdf Graphic file (type pdf)
+<use FigurasUV/CO9.pdf>
+Package pdftex.def Info: FigurasUV/CO9.pdf  used on input line 228.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (2.33214pt too high) detected at line 228
+ []
+
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[24
+
+ <./FigurasUV/CO9.pdf>]
+<FigurasUV/CO10.pdf, id=767, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO10.pdf Graphic file (type pdf)
+<use FigurasUV/CO10.pdf>
+Package pdftex.def Info: FigurasUV/CO10.pdf  used on input line 236.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (2.33214pt too high) detected at line 236
+ []
+
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[25
+
+ <./FigurasUV/CO10.pdf>]
+<FigurasUV/CO11.pdf, id=799, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO11.pdf Graphic file (type pdf)
+<use FigurasUV/CO11.pdf>
+Package pdftex.def Info: FigurasUV/CO11.pdf  used on input line 244.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (2.33214pt too high) detected at line 244
+ []
+
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[26
+
+ <./FigurasUV/CO11.pdf>]
+<FigurasUV/CO12.pdf, id=830, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO12.pdf Graphic file (type pdf)
+<use FigurasUV/CO12.pdf>
+Package pdftex.def Info: FigurasUV/CO12.pdf  used on input line 252.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (2.33214pt too high) detected at line 252
+ []
+
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[27
+
+ <./FigurasUV/CO12.pdf>]
+<FigurasUV/CO13.pdf, id=861, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO13.pdf Graphic file (type pdf)
+<use FigurasUV/CO13.pdf>
+Package pdftex.def Info: FigurasUV/CO13.pdf  used on input line 260.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (2.33214pt too high) detected at line 260
+ []
+
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[28
+
+ <./FigurasUV/CO13.pdf>]
+<FigurasUV/CO14.pdf, id=892, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO14.pdf Graphic file (type pdf)
+<use FigurasUV/CO14.pdf>
+Package pdftex.def Info: FigurasUV/CO14.pdf  used on input line 268.
+(pdftex.def)             Requested size: 339.18825pt x 179.86252pt.
+
+Overfull \vbox (2.33214pt too high) detected at line 268
+ []
+
+
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[29
+
+ <./FigurasUV/CO14.pdf>]
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[30
+
+] ("presentacion SEMINARIO T1.bbl")
+Overfull \hbox (39.27887pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[31
 
  <C:/Users/KEVINSTEVEN/AppData/Roaming/MiKTeX/2.9/tex/latex/beamer/beamericonar
 ticle.pdf>]
@@ -983,33 +1406,42 @@ ticle.pdf>]
 \tf@snm=\write8
 \openout8 = `"presentacion SEMINARIO T1.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
  ("presentacion SEMINARIO T1.aux"
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
 Package rerunfilecheck Info: File `"presentacion SEMINARIO T1".out' has not cha
 nged.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: E301FFA55C7FB2AEAE4AC6B79FDDEAD0;345.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 18092 strings out of 492946
- 346221 string characters out of 3135510
- 433177 words of memory out of 3000000
- 21579 multiletter control sequences out of 15000+200000
- 5508 words of font info for 20 fonts, out of 3000000 for 9000
+ 18706 strings out of 492946
+ 357464 string characters out of 3135510
+ 444498 words of memory out of 3000000
+ 22082 multiletter control sequences out of 15000+200000
+ 8997 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,55p,818b,578s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on "presentacion SEMINARIO T1.pdf" (3 pages, 70286 bytes).
+ 56i,16n,63p,884b,837s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy10.pfb>
+Output written on "presentacion SEMINARIO T1.pdf" (31 pages, 429742 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1032 PDF objects out of 1200 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
