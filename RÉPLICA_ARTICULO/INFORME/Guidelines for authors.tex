@@ -85,7 +85,6 @@ donde se deben determinar valores para $\beta$(usualmente 0.1) y $LTPD$ menciona
 Mientras el ANSI (MIL-STD-105) es un sistema AQL (protege al productor - Si la calidad está en el AQL, nos aseguramos de que se pueda aceptar el lote), C = 0 es un sistema LTPD (protege al consumidor - si la calidad está en el LTPD nos permite asegurarnos de que rechazamos).
 
 Lo primero que trata de mostrar Squeglia en su libro, son los efectos de los números de aceptación en la curva OC, para ello compara dos planes de muestreo, uno con un tamaño de muestra $n=125$ y un número de aceptación $c=10$, y el otro con un tamaño de muestra $n=18$ y un número de aceptación $c=0$. La figura 1 es la obtenida por nosotros por medio del software \citeasnoun{R}, para evaluar estos dos planes de muestreo. En ella se confirma lo que Squeglia afirmaba ``\textit{Con el número de aceptación establecido en cero, tenemos una mayor protección en el nivel LTPD con un tamaño de muestra de 18, en comparación con un plan de muestreo de ANSI Z1.4 que tiene un tamaño de muestra de 125 con un número de aceptación de 10}''
-
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.45]{FigurasUV/Figura2.pdf}
@@ -110,20 +109,39 @@ Otro aspecto importante que se compara en este libro, es el tamaño de muestra ne
     \caption{Comparación tamaños de muestra ambos planes}
   \label{tab:addlabel}%
 \end{table}%
-
 Como lo menciona Squeglia, se logra apreciar que los planes c=0 brindan una protección igual o mayor al nivel de riesgo del consumidor de 0.1. También se observa que se realiza menos inspección (el tamaño de muestra es considerablemente inferior para valor de AQL mayores). 
- 
+
+Otro aspecto importante que menciona Squeglia es el concepto del AOQL, él lo define como el máximo promedio de calidad saliente de una estación de inspección para un plan de muestreo en particular, en palabras propias, el AOQL lo podríamos definir como el peor nivel de calidad con el que se espera trabajar bajo un plan de muestreo específico. Squeglia ejemplifica esto mostrando una curva AOQ para el plan de muestreo $n=50$ y $c=0$, el AOQL se encuentra en el punto máximo de esta curva. En la figura 2 se pueden observar los resultados replicados. De esta gráfica podemos decir que no importa qué tan mala sea la proporción de defectuosos en los lotes que entran, la calidad promedio de salida nunca será peor que 0.73\% de defectuosos en promedio.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.45]{FigurasUV/Figura3.pdf}
   \caption{Curva AOQL}
 \end{figure}
 
+En la figura 3 se muestra una comparación de los valores de AOQL para varios tamaños de muestra y números de aceptación. Al igual que el autor, utilizamos infinitos tamaños de lote para construir este gráfico. Se puede apreciar que mientras mayor sea el tamaño de muestra \textbf{n}, y menor sea el número de aceptación \textbf{c}, el AOQL(máxima calidad promedio de salida) es menor, es decir, la calidad promedio de salida en el peor de los casos, va a presentar un porcentaje mucho menor de productos defectuosos. Para entender mejor esto, tomemos dos tamaños de muestra y dos números de aceptación puntuales, por facilidad, centrémonos en los tamaños de muestra $n=20$ y $n=80$ y en los números de aceptación $c=0$ y $c=1$. El AOQL aproximado en cada una de estas intersecciones, se muestra en la tabla 2.
+\pagebreak
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.45]{FigurasUV/Figura4.pdf}
   \caption{Curvas para determinar valores AOQL}
 \end{figure}
+
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \multicolumn{1}{|c|}{\multirow{2}[4]{*}{\textbf{Número de\newline{} aceptación c}}} & \multicolumn{2}{c|}{\textbf{Tamaño de muestra n}} \\
+\cline{2-3}          & \textbf{20} & \textbf{80} \\
+    \hline
+    \textbf{0} & 0.0437 & 0.0108 \\
+    \hline
+    \textbf{1} & 0.072 & 0.0174 \\
+    \hline
+    \end{tabular}%
+    \caption{AOQL por tamaño de muestra y número de aceptación}
+  \label{tab:addlabel}%
+\end{table}%
+Se puede notar que cuando el tamaño de muestra es 20 y $c=0$ el AOQL es de aproximadamente 0.0437, y cuando $c=1$, el AOQL aumenta a 0.072, es decir, cuando el número de aceptación aumenta en 1, el peor nivel de calidad que se espera, en términos de porcentaje de defectuosos aumenta en 2.83\%. Cuando el tamaño de muestra es 80, podemos ver que cuando $c=0$ y $c=1$, el AOQL es, respectivamente, de 0.0108 y 0.0174; en este caso, el peor nivel de calidad esperado, aumenta solo en 0.66\% de defectuosos. Si se realiza la comparación por filas en lugar de por columnas, es decir, si comparamos en términos de tamaño de muestra fijando el número de aceptación, vemos que el AOQL presenta un aumento considerable cuando se pasa de 80 a 20 como tamaño de muestra. Con esto se confirma la interpretación inicial sobre el gráfico 3, mientras mayor sea el tamaño de muestra y menor sea el número de aceptación, la máxima calidad promedio de salida(AOQL) va a ser mucho menor en términos de porcentaje de defectuosos.
 
 Finalmente, el autor realiza curvas de operación para diferentes números de aceptación por rangos de tamaños de lotes, estas curvas se presentarán como anexo. 
 
@@ -147,6 +165,75 @@ Finalmente, el autor realiza curvas de operación para diferentes números de acep
   \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 16 - 25}
 \end{figure}
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO4.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 26 - 50}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO5.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 51 - 90}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO6.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 91 - 150}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO7.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 151 - 280}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO8.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 281 - 500}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO9.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 501 - 1200}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO10.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 1201 - 3200}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO11.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 3201 - 10000}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO12.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 10001 - 35000}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO13.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 35001 - 150000}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/CO14.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 150001 - 500000}
+\end{figure}
+
+
+~\\
+\pagebreak
 \subsection{Anexo 2: Código R}
 
     \bibliography{references}

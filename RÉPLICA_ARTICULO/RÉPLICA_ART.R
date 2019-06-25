@@ -241,6 +241,7 @@ for (j in 1:length(c)) {
     plot(n,max_AOQ,type = "l",ylim = c(0,0.1),xlim=c(140,0),xlab="Tamaño de muestra",ylab="AOQL")
     text(125,0.095, "c=15",cex = 1, col="black")
     text(40,0.027, "c=0",cex = 1, col="black")
+    #abline(v=c(20,80),h=c(0.0108,0.0174,0.0437,0.072))
     a=T
   }
   
@@ -301,7 +302,7 @@ text(0.14,0.25, "n=8",cex = 1, col="black")
 text(0.08,0.2, "n=13",cex = 1, col="black")
 grid(10, 10, lwd = 0) 
 
-#PAG 18
+#PAG 19
 # Fijar en una matriz la secuencia de
 # los valores de los "no conformes"
 j<-seq(0,0.76,0.04)
@@ -332,163 +333,322 @@ text(0.07,0.15, "n=20",cex = 1, col="black")
 grid(10, 10, lwd = 0) 
 
 #PAG 20
-n=c(32,20,13,8,5,3)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+# Fijar en una matriz la secuencia de
+# los valores de los "no conformes"
+j<-seq(0,0.56,0.02)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+# Integrar los resultados en una matriz
+n0<-phyper(0,j*50,(1-j)*50,32)
+n1<-phyper(0,j*50,(1-j)*50,20)
+n2<-phyper(0,j*50,(1-j)*50,13)
+n3<-phyper(0,j*50,(1-j)*50,8)
+n4<-phyper(0,j*50,(1-j)*50,5)
+n5<-phyper(0,j*50,(1-j)*50,3)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+# Plotear ambas matrices
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.25,0.45, "n=3",cex = 1, col="black")
+text(0.15,0.3, "n=8",cex = 1, col="black")
+text(0.2,0.36, "n=5",cex = 1, col="black")
+text(0.11,0.25, "n=13",cex = 1, col="black")
+text(0.08,0.2, "n=20",cex = 1, col="black")
+text(0.05,0.15, "n=32",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG 21
-n=c(80,50,32,20,13,8,5)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.46,1/90)
+p.mat<-matrix(rep(j,7),ncol=7,byrow=FALSE)
+n0<-phyper(0,j*90,(1-j)*90,80)
+n1<-phyper(0,j*90,(1-j)*90,50)
+n2<-phyper(0,j*90,(1-j)*90,32)
+n3<-phyper(0,j*90,(1-j)*90,20)
+n4<-phyper(0,j*90,(1-j)*90,13)
+n5<-phyper(0,j*90,(1-j)*90,8)
+n6<-phyper(0,j*90,(1-j)*90,5)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5,n6)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.19,0.38, "n=5",cex = 1, col="black")
+text(0.15,0.3, "n=8",cex = 1, col="black")
+text(0.11,0.25, "n=13",cex = 1, col="black")
+text(0.08,0.20, "n=20",cex = 1, col="black")
+text(0.058,0.15, "n=32",cex = 1, col="black")
+text(0.042,0.1, "n=50",cex = 1, col="black")
+text(0.025,0.07, "n=80",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG 22
-n=c(80,32,20,13,7,5)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.46,1/150)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+n0<-phyper(0,j*150,(1-j)*150,80)
+n1<-phyper(0,j*150,(1-j)*150,32)
+n2<-phyper(0,j*150,(1-j)*150,20)
+n3<-phyper(0,j*150,(1-j)*150,13)
+n4<-phyper(0,j*150,(1-j)*150,7)
+n5<-phyper(0,j*150,(1-j)*150,5)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.19,0.38, "n=5",cex = 1, col="black")
+text(0.165,0.3, "n=7",cex = 1, col="black")
+text(0.11,0.25, "n=13",cex = 1, col="black")
+text(0.09,0.20, "n=20",cex = 1, col="black")
+text(0.065,0.15, "n=32",cex = 1, col="black")
+text(0.035,0.07, "n=80",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG 23
-n=c(125,50,32,20,13,10,6)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.4,1/280)
+p.mat<-matrix(rep(j,7),ncol=7,byrow=FALSE)
+n0<-phyper(0,j*280,(1-j)*280,125)
+n1<-phyper(0,j*280,(1-j)*280,50)
+n2<-phyper(0,j*280,(1-j)*280,32)
+n3<-phyper(0,j*280,(1-j)*280,20)
+n4<-phyper(0,j*280,(1-j)*280,13)
+n5<-phyper(0,j*280,(1-j)*280,10)
+n6<-phyper(0,j*280,(1-j)*280,6)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5,n6)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.145,0.45, "n=6",cex = 1, col="black")
+text(0.105,0.38, "n=10",cex = 1, col="black")
+text(0.097,0.3, "n=13",cex = 1, col="black")
+text(0.076,0.25, "n=20",cex = 1, col="black")
+text(0.055,0.20, "n=32",cex = 1, col="black")
+text(0.042,0.15, "n=50",cex = 1, col="black")
+text(0.025,0.07, "n=125",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG 24
-n=c(125,50,29,16,11,7)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.36,1/500)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+n0<-phyper(0,j*500,(1-j)*500,125)
+n1<-phyper(0,j*500,(1-j)*500,50)
+n2<-phyper(0,j*500,(1-j)*500,29)
+n3<-phyper(0,j*500,(1-j)*500,16)
+n4<-phyper(0,j*500,(1-j)*500,11)
+n5<-phyper(0,j*500,(1-j)*500,7)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.13,0.45, "n=7",cex = 1, col="black")
+text(0.1,0.38, "n=11",cex = 1, col="black")
+text(0.095,0.25, "n=16",cex = 1, col="black")
+text(0.06,0.20, "n=29",cex = 1, col="black")
+text(0.044,0.15, "n=50",cex = 1, col="black")
+text(0.027,0.07, "n=125",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG 25
-n=c(125,75,47,27,19,11)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.25,1/1200)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+n0<-phyper(0,j*1200,(1-j)*1200,125)
+n1<-phyper(0,j*1200,(1-j)*1200,75)
+n2<-phyper(0,j*1200,(1-j)*1200,47)
+n3<-phyper(0,j*1200,(1-j)*1200,27)
+n4<-phyper(0,j*1200,(1-j)*1200,19)
+n5<-phyper(0,j*1200,(1-j)*1200,11)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.08,0.45, "n=11",cex = 1, col="black")
+text(0.06,0.38, "n=19",cex = 1, col="black")
+text(0.057,0.25, "n=27",cex = 1, col="black")
+text(0.039,0.20, "n=47",cex = 1, col="black")
+text(0.032,0.15, "n=75",cex = 1, col="black")
+text(0.027,0.07, "n=125",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG26
-n=c(200,73,42,29,13,9)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    x11()
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.3,1/3200)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+#CON HIPERGEOMETRICA
+n0<-phyper(0,j*3200,(1-j)*3200,200)
+n1<-phyper(0,j*3200,(1-j)*3200,73)
+n2<-phyper(0,j*3200,(1-j)*3200,42)
+n3<-phyper(0,j*3200,(1-j)*3200,23)
+n4<-phyper(0,j*3200,(1-j)*3200,13)
+n5<-phyper(0,j*3200,(1-j)*3200,9)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.095,0.45, "n=9",cex = 1, col="black")
+text(0.08,0.38, "n=13",cex = 1, col="black")
+text(0.064,0.27, "n=23",cex = 1, col="black")
+text(0.044,0.20, "n=42",cex = 1, col="black")
+text(0.032,0.15, "n=73",cex = 1, col="black")
+text(0.022,0.07, "n=200",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
+
+#CON BINOMIAL
+n0<-pbinom(0,200,j)
+n1<-pbinom(0,73,j)
+n2<-pbinom(0,42,j)
+n3<-pbinom(0,23,j)
+n4<-pbinom(0,13,j)
+n5<-pbinom(0,9,j)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.095,0.45, "n=9",cex = 1, col="black")
+text(0.08,0.38, "n=13",cex = 1, col="black")
+text(0.064,0.27, "n=23",cex = 1, col="black")
+text(0.044,0.20, "n=42",cex = 1, col="black")
+text(0.032,0.15, "n=73",cex = 1, col="black")
+text(0.022,0.07, "n=200",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG27
-n=c(189,86,50,29,15,9)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    x11()
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.3,0.001)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+#CON BINOMIAL
+n0<-pbinom(0,189,j)
+n1<-pbinom(0,86,j)
+n2<-pbinom(0,50,j)
+n3<-pbinom(0,29,j)
+n4<-pbinom(0,15,j)
+n5<-pbinom(0,9,j)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.095,0.45, "n=9",cex = 1, col="black")
+text(0.07,0.38, "n=15",cex = 1, col="black")
+text(0.055,0.27, "n=29",cex = 1, col="black")
+text(0.04,0.20, "n=50",cex = 1, col="black")
+text(0.03,0.15, "n=86",cex = 1, col="black")
+text(0.022,0.07, "n=189",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG28
-n=c(189,77,46,29,15,9)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    x11()
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.3,0.001)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+n0<-pbinom(0,189,j)
+n1<-pbinom(0,77,j)
+n2<-pbinom(0,46,j)
+n3<-pbinom(0,29,j)
+n4<-pbinom(0,15,j)
+n5<-pbinom(0,9,j)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.095,0.45, "n=9",cex = 1, col="black")
+text(0.07,0.38, "n=15",cex = 1, col="black")
+text(0.055,0.27, "n=29",cex = 1, col="black")
+text(0.04,0.20, "n=46",cex = 1, col="black")
+text(0.03,0.15, "n=77",cex = 1, col="black")
+text(0.022,0.07, "n=189",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG29
-n=c(170,96,56,29,15,9)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    x11()
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.3,0.001)
+p.mat<-matrix(rep(j,6),ncol=6,byrow=FALSE)
+n0<-pbinom(0,170,j)
+n1<-pbinom(0,96,j)
+n2<-pbinom(0,56,j)
+n3<-pbinom(0,29,j)
+n4<-pbinom(0,15,j)
+n5<-pbinom(0,9,j)
+OC.mat<-cbind(n0,n1,n2,n3,n4,n5)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.095,0.45, "n=9",cex = 1, col="black")
+text(0.07,0.38, "n=15",cex = 1, col="black")
+text(0.055,0.27, "n=29",cex = 1, col="black")
+text(0.037,0.20, "n=56",cex = 1, col="black")
+text(0.027,0.15, "n=96",cex = 1, col="black")
+text(0.008,0.07, "n=170",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #PAG 30
-n=c(156,64,29,15,9)
-P=seq(0,1,0.01)
-a=T
-for (i in 1:length(n)) {
-  Pa=pbinom(0,n[i],P)
-  if(a==T){
-    x11()
-    plot(P,Pa,type = "l",xlim=c(0,0.7))
-    abline(h=0.1,col="red")
-    a="K"
-  }
-  lines(P,Pa,add=T)
-}
+j<-seq(0,0.3,0.001)
+p.mat<-matrix(rep(j,5),ncol=5,byrow=FALSE)
+n0<-pbinom(0,156,j)
+n1<-pbinom(0,64,j)
+n2<-pbinom(0,29,j)
+n3<-pbinom(0,15,j)
+n4<-pbinom(0,9,j)
+OC.mat<-cbind(n0,n1,n2,n3,n4)
+x11()
+matplot(p.mat, OC.mat, type = "l", lty = 1, lwd = 2, lend = par("lend"),
+        pch = NULL,
+        col = 1:6, cex = 2, bg = NA,
+        xlab = "p", ylab = expression(pa),
+        xlim = NULL, ylim = NULL,
+        add = FALSE, verbose
+        = getOption("verbose"))
+text(0.095,0.45, "n=9",cex = 1, col="black")
+text(0.07,0.38, "n=15",cex = 1, col="black")
+text(0.055,0.27, "n=29",cex = 1, col="black")
+text(0.033,0.20, "n=64",cex = 1, col="black")
+text(0.024,0.08, "n=170",cex = 1, col="black")
+grid(10, 10, lwd = 0) 
 
 #Función para encontrar RQL
 RQL=function(alfa,c,n){
