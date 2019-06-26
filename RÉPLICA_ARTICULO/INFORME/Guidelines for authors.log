@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  25 JUN 2019 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  26 JUN 2019 15:52
 entering extended mode
 **"./Guidelines for authors.tex"
 ("Guidelines for authors.tex"
@@ -504,235 +504,224 @@ Overfull \hbox (32.5191pt too wide) in paragraph at lines 125--126
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <./FigurasUV/Figura3.pdf>]
-<FigurasUV/CO1.pdf, id=42, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO1.pdf Graphic file (type pdf)
-<use FigurasUV/CO1.pdf>
-Package pdftex.def Info: FigurasUV/CO1.pdf  used on input line 152.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 152--153
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO2.pdf, id=43, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO2.pdf Graphic file (type pdf)
-<use FigurasUV/CO2.pdf>
-Package pdftex.def Info: FigurasUV/CO2.pdf  used on input line 158.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 158--159
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO3.pdf, id=44, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO3.pdf Graphic file (type pdf)
-<use FigurasUV/CO3.pdf>
-Package pdftex.def Info: FigurasUV/CO3.pdf  used on input line 164.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 164--165
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO4.pdf, id=45, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO4.pdf Graphic file (type pdf)
-<use FigurasUV/CO4.pdf>
-Package pdftex.def Info: FigurasUV/CO4.pdf  used on input line 170.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 170--171
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO5.pdf, id=46, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO5.pdf Graphic file (type pdf)
-<use FigurasUV/CO5.pdf>
-Package pdftex.def Info: FigurasUV/CO5.pdf  used on input line 176.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 176--177
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO6.pdf, id=47, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO6.pdf Graphic file (type pdf)
-<use FigurasUV/CO6.pdf>
-Package pdftex.def Info: FigurasUV/CO6.pdf  used on input line 182.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 182--183
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO7.pdf, id=48, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO7.pdf Graphic file (type pdf)
-<use FigurasUV/CO7.pdf>
-Package pdftex.def Info: FigurasUV/CO7.pdf  used on input line 188.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 188--189
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO8.pdf, id=49, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO8.pdf Graphic file (type pdf)
-<use FigurasUV/CO8.pdf>
-Package pdftex.def Info: FigurasUV/CO8.pdf  used on input line 194.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 194--195
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO9.pdf, id=50, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO9.pdf Graphic file (type pdf)
-<use FigurasUV/CO9.pdf>
-Package pdftex.def Info: FigurasUV/CO9.pdf  used on input line 200.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 200--201
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO10.pdf, id=51, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO10.pdf Graphic file (type pdf)
-<use FigurasUV/CO10.pdf>
-Package pdftex.def Info: FigurasUV/CO10.pdf  used on input line 206.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 206--207
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO11.pdf, id=52, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO11.pdf Graphic file (type pdf)
-<use FigurasUV/CO11.pdf>
-Package pdftex.def Info: FigurasUV/CO11.pdf  used on input line 212.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 212--213
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO12.pdf, id=53, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO12.pdf Graphic file (type pdf)
-<use FigurasUV/CO12.pdf>
-Package pdftex.def Info: FigurasUV/CO12.pdf  used on input line 218.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 218--219
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO13.pdf, id=54, 1027.84pt x 545.03625pt>
-File: FigurasUV/CO13.pdf Graphic file (type pdf)
-<use FigurasUV/CO13.pdf>
-Package pdftex.def Info: FigurasUV/CO13.pdf  used on input line 224.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
-
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 224--225
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FigurasUV/CO14.pdf, id=55, 1027.84pt x 545.03625pt>
+<FigurasUV/CO14.pdf, id=42, 1027.84pt x 545.03625pt>
 File: FigurasUV/CO14.pdf Graphic file (type pdf)
 <use FigurasUV/CO14.pdf>
-Package pdftex.def Info: FigurasUV/CO14.pdf  used on input line 230.
+Package pdftex.def Info: FigurasUV/CO14.pdf  used on input line 149.
+(pdftex.def)             Requested size: 411.12872pt x 218.01064pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./FigurasUV/Figura4.pdf>] ("Guidelines for authors.bbl") [6 <./FigurasUV/C
+O14.pdf>]
+<FigurasUV/CO1.pdf, id=55, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO1.pdf Graphic file (type pdf)
+<use FigurasUV/CO1.pdf>
+Package pdftex.def Info: FigurasUV/CO1.pdf  used on input line 171.
 (pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
 
-Overfull \hbox (32.5191pt too wide) in paragraph at lines 230--231
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+<FigurasUV/CO2.pdf, id=56, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO2.pdf Graphic file (type pdf)
+<use FigurasUV/CO2.pdf>
+Package pdftex.def Info: FigurasUV/CO2.pdf  used on input line 177.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 177--178
+ [][] 
+ []
+
+<FigurasUV/CO3.pdf, id=57, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO3.pdf Graphic file (type pdf)
+<use FigurasUV/CO3.pdf>
+Package pdftex.def Info: FigurasUV/CO3.pdf  used on input line 183.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 183--184
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 <./FigurasUV/Figura4.pdf>] ("Guidelines for authors.bbl"
-Overfull \vbox (8.63176pt too high) has occurred while \output is active []
+<FigurasUV/CO4.pdf, id=58, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO4.pdf Graphic file (type pdf)
+<use FigurasUV/CO4.pdf>
+Package pdftex.def Info: FigurasUV/CO4.pdf  used on input line 189.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 189--190
+ [][] 
+ []
 
 
-[6 <./FigurasUV/CO1.pdf> <./FigurasUV/CO2.pdf>]) [7 <./FigurasUV/CO3.pdf> <./Fi
-gurasUV/CO4.pdf>] [8 <./FigurasUV/CO5.pdf> <./FigurasUV/CO6.pdf>] [9 <./Figuras
-UV/CO7.pdf> <./FigurasUV/CO8.pdf>] [10 <./FigurasUV/CO9.pdf> <./FigurasUV/CO10.
-pdf>] [11 <./FigurasUV/CO11.pdf> <./FigurasUV/CO12.pdf>] [12 <./FigurasUV/CO13.
-pdf> <./FigurasUV/CO14.pdf>] ("Guidelines for authors.aux")
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO5.pdf, id=59, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO5.pdf Graphic file (type pdf)
+<use FigurasUV/CO5.pdf>
+Package pdftex.def Info: FigurasUV/CO5.pdf  used on input line 195.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 195--196
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO6.pdf, id=60, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO6.pdf Graphic file (type pdf)
+<use FigurasUV/CO6.pdf>
+Package pdftex.def Info: FigurasUV/CO6.pdf  used on input line 201.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 201--202
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO7.pdf, id=61, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO7.pdf Graphic file (type pdf)
+<use FigurasUV/CO7.pdf>
+Package pdftex.def Info: FigurasUV/CO7.pdf  used on input line 207.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 207--208
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO8.pdf, id=62, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO8.pdf Graphic file (type pdf)
+<use FigurasUV/CO8.pdf>
+Package pdftex.def Info: FigurasUV/CO8.pdf  used on input line 213.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 213--214
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO9.pdf, id=63, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO9.pdf Graphic file (type pdf)
+<use FigurasUV/CO9.pdf>
+Package pdftex.def Info: FigurasUV/CO9.pdf  used on input line 219.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 219--220
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO10.pdf, id=64, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO10.pdf Graphic file (type pdf)
+<use FigurasUV/CO10.pdf>
+Package pdftex.def Info: FigurasUV/CO10.pdf  used on input line 225.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 225--226
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO11.pdf, id=65, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO11.pdf Graphic file (type pdf)
+<use FigurasUV/CO11.pdf>
+Package pdftex.def Info: FigurasUV/CO11.pdf  used on input line 231.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 231--232
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO12.pdf, id=66, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO12.pdf Graphic file (type pdf)
+<use FigurasUV/CO12.pdf>
+Package pdftex.def Info: FigurasUV/CO12.pdf  used on input line 237.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 237--238
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FigurasUV/CO13.pdf, id=67, 1027.84pt x 545.03625pt>
+File: FigurasUV/CO13.pdf Graphic file (type pdf)
+<use FigurasUV/CO13.pdf>
+Package pdftex.def Info: FigurasUV/CO13.pdf  used on input line 243.
+(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+
+Overfull \hbox (32.5191pt too wide) in paragraph at lines 243--244
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./FigurasUV/CO1.pdf> <./FigurasUV/CO2.pdf>] [8 <./FigurasUV/CO3.pdf> <./Fig
+urasUV/CO4.pdf>] [9 <./FigurasUV/CO5.pdf> <./FigurasUV/CO6.pdf>] [10 <./Figuras
+UV/CO7.pdf> <./FigurasUV/CO8.pdf>] [11 <./FigurasUV/CO9.pdf> <./FigurasUV/CO10.
+pdf>] [12 <./FigurasUV/CO11.pdf> <./FigurasUV/CO12.pdf>] [13 <./FigurasUV/CO13.
+pdf>] ("Guidelines for authors.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5682 strings out of 492946
- 81435 string characters out of 3135510
- 168257 words of memory out of 3000000
- 9424 multiletter control sequences out of 15000+200000
- 22476 words of font info for 62 fonts, out of 3000000 for 9000
+ 5674 strings out of 492946
+ 81460 string characters out of 3135510
+ 164264 words of memory out of 3000000
+ 9418 multiletter control sequences out of 15000+200000
+ 20936 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,1051b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
-pi600\ecbx1200.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
-.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0900.pk> <C:\Users\KEVINSTEVEN\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\KE
-VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.
+pi600\ecbx1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\eccc0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
+.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\KEVINSTEVEN\AppDat
+a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\KE
+VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.
 pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecrm0800.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
-2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\K
-EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700
+dpi600\ecrm0600.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
+our/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
+2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\KEVINSTEVEN\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\K
+EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000
 .pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
-/dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb>
-Output written on "Guidelines for authors.pdf" (12 pages, 341645 bytes).
+/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Guidelines for authors.pdf" (13 pages, 335264 bytes).
 PDF statistics:
- 615 PDF objects out of 1000 (max. 8388607)
+ 593 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -52,7 +52,7 @@ Para la comparación de ambos métodos se utilizaron curvas características de ope
 Algunos conceptos claves, que se mencionarán de aquí en adelante son:
 \begin{itemize}
 \item AQL (aceptable quality level). Representa el más pobre nivel de calidad del proceso del proveedor que el consumidor considera aceptable como un proceso promedio. La probabilidad de aceptar este nivel de calidad debe ser alta y se denota por $(1-\alpha)$, donde $\alpha$ es el riesgo del productor.
-\item LTPD (lot tolerance percent defective). Es el peor nivel de calidad que el consumidor esta dispuesto a aceptar en un lote individual. También se le conoce como nivel de calidad rechazable y se denota por $\beta$(riesgo de consumidor).
+\item LTPD (lot tolerance percent defective). Es el peor nivel de calidad que el consumidor esta dispuesto a aceptar en un lote individual. También se le conoce como nivel de calidad rechazable(RQL) y se denota por $\beta$(riesgo de consumidor).
 \end{itemize}
 El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que el plan de muestreo rechazará. Se desea designar un plan de muestreo que acepte un lote de producto particular en el AQL la mayoría de las veces y que lo rechace en el RQL la mayor parte del tiempo.
 \begin{itemize}
@@ -143,10 +143,29 @@ En la figura 3 se muestra una comparación de los valores de AOQL para varios tam
 \end{table}%
 Se puede notar que cuando el tamaño de muestra es 20 y $c=0$ el AOQL es de aproximadamente 0.0437, y cuando $c=1$, el AOQL aumenta a 0.072, es decir, cuando el número de aceptación aumenta en 1, el peor nivel de calidad que se espera, en términos de porcentaje de defectuosos aumenta en 2.83\%. Cuando el tamaño de muestra es 80, podemos ver que cuando $c=0$ y $c=1$, el AOQL es, respectivamente, de 0.0108 y 0.0174; en este caso, el peor nivel de calidad esperado, aumenta solo en 0.66\% de defectuosos. Si se realiza la comparación por filas en lugar de por columnas, es decir, si comparamos en términos de tamaño de muestra fijando el número de aceptación, vemos que el AOQL presenta un aumento considerable cuando se pasa de 80 a 20 como tamaño de muestra. Con esto se confirma la interpretación inicial sobre el gráfico 3, mientras mayor sea el tamaño de muestra y menor sea el número de aceptación, la máxima calidad promedio de salida(AOQL) va a ser mucho menor en términos de porcentaje de defectuosos.
 
-Finalmente, el autor realiza curvas de operación para diferentes números de aceptación por rangos de tamaños de lotes, estas curvas se presentarán como anexo. 
+Finalmente, el autor realiza curvas de operación para diferentes tamaños de muestra por rangos de tamaños de lotes, se mostrará las curva de operación en el caso extremo superior (cuando el tamaño del lote es extremadamente grande, es decir, está entre 150001 y 500000 ), para observar el efecto del tamaño de muestra en las probabilidades de aceptación. Si desea ver el comportamiento del tamaño de muestra en lotes con tamaños correspondientes a otros rangos, puede revisar las curvas de operación en el anexo 1 y obtener su propia interpretación.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.4]{FigurasUV/CO14.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 150001 - 500000}
+\end{figure}
 
-\section{Anexos}
-\subsection{Anexo 1: Curvas de operación}
+\section{Conclusiones}
+Algunas conclusiones importantes que se obtienen, a partir de los resultados nuestros y del libro de Squeglia comparando ambos métodos de muestreo(MIL-STD-105E/ANSI Z1.4 y C=0) de aceptación son:
+\begin{itemize}
+\item[1.]Los planes de aceptación Zero desarrollados por Squeglia están diseñados ``para brindar una protección general al consumidor igual o mayor con menos inspección que los planes de muestreo MIL-STD-105 correspondientes''. Como se pudo observar en las probabilidades de aceptación, para lotes con niveles de defectos reales mayores que 0 pero menores que el RQL, es más probable que el enfoque C = 0 rechace el lote (proteja al consumidor).
+
+\item[2.]Si la calidad está cerca del 100\%, los planes C = 0 darán como resultado que se inspeccionen menos partes en total.
+
+\item[3.]Los planes C=0 pueden afectar considerablemente al productor, ya que, si la calidad no está cerca del 100\%, los planes C = 0 darán como resultado más lotes rechazados. Un plan estándar(ANSI Z1.4) teóricamente aceptaría un lote con el nivel de AQL de defectos el 95\% del tiempo, mientras que el plan C = 0 rechazaría con mucha mayor frecuencia.
+\end{itemize}
+
+    \bibliography{references}
+
+    \appendix% !don't modify this line¡
+
+\pagebreak
+\section{Curvas de operación}
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.45]{FigurasUV/CO1.pdf}
@@ -224,21 +243,5 @@ Finalmente, el autor realiza curvas de operación para diferentes números de acep
   \includegraphics[scale=0.45]{FigurasUV/CO13.pdf}
   \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 35001 - 150000}
 \end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.45]{FigurasUV/CO14.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 150001 - 500000}
-\end{figure}
-
-
-~\\
-\pagebreak
-\subsection{Anexo 2: Código R}
-
-    \bibliography{references}
-
-    \appendix% !don't modify this line¡
-
 \end{document}
 
