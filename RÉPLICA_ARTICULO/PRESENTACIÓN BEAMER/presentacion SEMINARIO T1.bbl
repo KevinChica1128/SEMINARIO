@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{ControlR}
+Erick Suhel~Marroquín Escobar.
+\newblock {\em Simulaci\'{o}n de control estad\'{i}stico de la calidad con
+  lenguaje R}, 2017.
+
 \bibitem{AyR}
 Erick Marroquin.
 \newblock {\em Planesmuestra: Functions for Calculating Dodge Romig, MIL STD

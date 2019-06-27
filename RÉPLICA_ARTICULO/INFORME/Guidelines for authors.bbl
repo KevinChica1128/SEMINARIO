@@ -1,5 +1,9 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Escobar}{2017}{ControlR}
+Escobar, E. S.~M.  \harvardyearleft 2017\harvardyearright , {\em Simulaci\'{o}n
+  de control estad\'{i}stico de la calidad con lenguaje R}.
+
 \harvarditem{Marroquin}{2016}{AyR}
 Marroquin, E.  \harvardyearleft 2016\harvardyearright , {\em Planesmuestra:
   Functions for Calculating Dodge Romig, MIL STD 105E and MIL STD 414

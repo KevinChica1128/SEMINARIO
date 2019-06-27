@@ -36,18 +36,14 @@
 \end{institutions}
 
 \begin{secondaryabstract}
-En el siguiente texto se verán replicados los resultados expuestos por Squeglia en su libro Zero Acceptance Number Sampling Plans (2008), antes que nada, se le introducirá al lector en conceptos sobre control de calidad para que sea de fácil entendimiento los términos utilizados.
-\\
-Squelia en su libro expone los beneficios de utilizar un numero c=0 como criterio para aceptar un lote, esto significa tener 0 numero de defectuosos en la muestra, Así pues, se compara el método usualmente utilizado MIL-STD-105E/ANSI Z1.4 con el propuesto por Squelia.
-\\
-Para la comparación de ambos métodos se utilizaron curvas características de operaciones con el fin de observar la probabilidad de aceptar un lote dado que tuvieran X porcentaje de defectuosos, además a esto se comparan los tamaños de muestra necesarios en cada plan de muestreo para distintos números de aceptación, al final se concluirá si efectivamente se mejor utilizar los métodos c=0 o por el contrario seguir utilizando métodos tradicionales.
+Los métodos de muestreo tipo aceptación y rechazo juegan un papel sumamente importante en el área del control de calidad, de aquí que día a día se desarrollen nuevas técnicas que optimicen los procesos de calidad. En el siguiente artículo se verán replicadas las propuestas de Squeglia en cuanto a cómo trabajar con un método en el que se impone como requisito de aceptación cero defectuosos en la muestra. Se realizaron comparaciones entre los métodos tradicionalmente utilizados, con el método c=0; para estas comparaciones se utilizaron curvas características de operaciones, valores de AOQL, probabilidades de aceptación, y todo esto en contraste con diferentes tamaños de muestra, donde observamos que el método propuesto en comparación con los métodos MIL-STD-105E/ANSI Z1.4 protegen aún más al consumidor, siendo este método mas estricto  a la hora de aceptar lotes con cantidades ``grandes'' de defectuosos. El método por otra parte ``castiga'' al productor, ya que si este no tiene una calidad cercana al 100\% este tiende a rechazar muchos más lotes.
 
 
 
 \end{secondaryabstract}
 
 \section{Introducción}
-\citeasnoun{A0} nos muestra en su libro una comparación bastante completa entre el muestreo de aceptación y rechazo para atributos por el método MIL-STD-105E/ANSI Z1.4 y los planes de muestreo c=0, dichas comparaciones se realizan en términos de tamaños de muestra, curvas características de operación y del AOQL (Máximo porcentaje de defectuosos esperado), además, ambos métodos no son totalmente independientes, los planes de muestreo c=0 tienen una relación bastante fuerte con los planes ANSI Z1.4, la cual también es abordada en este libro. En este artículo se tratará de replicar algunos de los resultados y comparaciones obtenidos por Squeglia. Para que este sea legible, se darán unos conceptos introductorios y se contextualizará al lector acerca del funcionamiento de estos dos planes de muestreo de aceptación.
+\citeasnoun{A0} nos muestra en su libro una comparación bastante completa entre el muestreo de aceptación y rechazo para atributos por el método MIL-STD-105E/ANSI Z1.4 y los planes de muestreo c=0, dichas comparaciones se realizan en términos de tamaños de muestra, curvas características de operación y del AOQL (Máximo porcentaje de defectuosos esperado). En este artículo se tratará de replicar algunos de los resultados y comparaciones obtenidos por Squeglia. Para que este sea legible, se darán unos conceptos introductorios y se contextualizará al lector acerca del funcionamiento de estos dos planes de muestreo de aceptación.
 
 Algunos conceptos claves, que se mencionarán de aquí en adelante son:
 \begin{itemize}
@@ -153,7 +149,7 @@ Finalmente, el autor realiza curvas de operación para diferentes tamaños de mues
 \section{Conclusiones}
 Algunas conclusiones importantes que se obtienen, a partir de los resultados nuestros y del libro de Squeglia comparando ambos métodos de muestreo(MIL-STD-105E/ANSI Z1.4 y C=0) de aceptación son:
 \begin{itemize}
-\item[1.]Los planes de aceptación Zero desarrollados por Squeglia están diseñados ``para brindar una protección general al consumidor igual o mayor con menos inspección que los planes de muestreo MIL-STD-105 correspondientes''. Como se pudo observar en las probabilidades de aceptación, para lotes con niveles de defectos reales mayores que 0 pero menores que el RQL, es más probable que el enfoque C = 0 rechace el lote (proteja al consumidor).
+\item[1.]Los planes de aceptación cero desarrollados por Squeglia están diseñados ``para brindar una protección general al consumidor igual o mayor con menos inspección que los planes de muestreo MIL-STD-105 correspondientes''. Como se pudo observar en las probabilidades de aceptación, para lotes con niveles de defectos reales mayores que 0 pero menores que el RQL, es más probable que el enfoque C = 0 rechace el lote (proteja al consumidor).
 
 \item[2.]Si la calidad está cerca del 100\%, los planes C = 0 darán como resultado que se inspeccionen menos partes en total.
 
@@ -162,9 +158,9 @@ Algunas conclusiones importantes que se obtienen, a partir de los resultados nue
 
     \bibliography{references}
 
+\nocite{ControlR}
     \appendix% !don't modify this line¡
 
-\pagebreak
 \section{Curvas de operación}
 \begin{figure}[h!]
   \centering
@@ -242,6 +238,18 @@ Algunas conclusiones importantes que se obtienen, a partir de los resultados nue
   \centering
   \includegraphics[scale=0.45]{FigurasUV/CO13.pdf}
   \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 35001 - 150000}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.8]{FigurasUV/letra.png}
+  \caption{Letra código del plan}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.9]{FigurasUV/n.png}
+  \caption{Tamaño de muestra}
 \end{figure}
 \end{document}
 

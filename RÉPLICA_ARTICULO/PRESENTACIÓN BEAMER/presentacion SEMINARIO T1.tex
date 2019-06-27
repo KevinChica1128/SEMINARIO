@@ -38,7 +38,7 @@ Squeglia (2008)\cite{A0} nos muestra en su libro una comparación bastante compl
 Algunos conceptos claves, que se mencionarán de aquí en adelante son:
 \begin{itemize}
 \item AQL (aceptable quality level). Representa el más pobre nivel de calidad del proceso del proveedor que el consumidor considera aceptable como un proceso promedio. La probabilidad de aceptar este nivel de calidad debe ser alta y se denota por $(1-\alpha)$, donde $\alpha$ es el riesgo del productor.
-\item LTPD (lot tolerance percent defective). Es el peor nivel de calidad que el consumidor esta dispuesto a aceptar en un lote individual. También se le conoce como nivel de calidad rechazable y se denota por $\beta$(riesgo de consumidor).
+\item LTPD (lot tolerance percent defective). Es el peor nivel de calidad que el consumidor esta dispuesto a aceptar en un lote individual. También se le conoce como nivel de calidad rechazable(RQL) y se denota por $\beta$(riesgo de consumidor).
 \end{itemize}
 El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que el plan de muestreo rechazará. Se desea designar un plan de muestreo que acepte un lote de producto particular en el AQL la mayoría de las veces y que lo rechace en el RQL la mayor parte del tiempo.
 \end{frame}
@@ -166,96 +166,8 @@ En la figura 3 se muestra una comparación de los valores de AOQL para varios ta
 \begin{frame}{Resultados}
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO2.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 9 - 15}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO3.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 16 - 25}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO4.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 26 - 50}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO5.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 51 - 90}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO6.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 91 - 150}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO7.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 151 - 280}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
   \includegraphics[scale=0.33]{FigurasUV/CO8.pdf}
   \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 281 - 500}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO9.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 501 - 1200}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO10.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 1201 - 3200}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO11.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 3201 - 10000}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO12.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 10001 - 35000}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Resultados}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.33]{FigurasUV/CO13.pdf}
-  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 35001 - 150000}
 \end{figure}
 \end{frame}
 
@@ -268,33 +180,131 @@ En la figura 3 se muestra una comparación de los valores de AOQL para varios ta
 \end{frame}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \section{Conclusiones}
 \begin{frame}{Conclusiones}
+Algunas conclusiones importantes que se obtienen, a partir de los resultados nuestros y del libro de Squeglia comparando ambos métodos de muestreo(MIL-STD-105E/ANSI Z1.4 y C=0) de aceptación son:
+\begin{itemize}
+\item[1.]Los planes de aceptación cero desarrollados por Squeglia están diseñados ``para brindar una protección general al consumidor igual o mayor con menos inspección que los planes de muestreo MIL-STD-105 correspondientes''. Como se pudo observar en las probabilidades de aceptación, para lotes con niveles de defectos reales mayores que 0 pero menores que el RQL, es más probable que el enfoque C = 0 rechace el lote (proteja al consumidor).
 
+\item[2.]Si la calidad está cerca del 100\%, los planes C = 0 darán como resultado que se inspeccionen menos partes en total.
+
+\item[3.]Los planes C=0 pueden afectar considerablemente al productor, ya que, si la calidad no está cerca del 100\%, los planes C = 0 darán como resultado más lotes rechazados. Un plan estándar(ANSI Z1.4) teóricamente aceptaría un lote con el nivel de AQL de defectos el 95\% del tiempo, mientras que el plan C = 0 rechazaría con mucha mayor frecuencia.
+\end{itemize}
 \end{frame}
 
 
+\section{Bibliografía}
 \begin{frame}
   \frametitle{Bibliografía}
   
-\nocite{A0}
+\nocite{A0,ControlR}
   
   \bibliographystyle{plain}
   \bibliography{references}
+\end{frame}
+
+\section{Anexos}
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.55]{FigurasUV/letra.png}
+  \caption{Letra código del plan}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.6]{FigurasUV/n.png}
+  \caption{Tamaño de muestra}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO2.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 9 - 15}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO3.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 16 - 25}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO4.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 26 - 50}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO5.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 51 - 90}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO6.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 91 - 150}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO7.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 151 - 280}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO9.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 501 - 1200}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO10.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 1201 - 3200}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO11.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 3201 - 10000}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO12.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 10001 - 35000}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anexos}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.33]{FigurasUV/CO13.pdf}
+  \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 35001 - 150000}
+\end{figure}
 \end{frame}
 \end{document}

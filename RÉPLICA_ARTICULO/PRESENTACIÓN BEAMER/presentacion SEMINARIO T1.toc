@@ -4,4 +4,6 @@
 \beamer@sectionintoc {2}{MIL-STD-105E/ANSI Z1.4}{6}{0}{2}
 \beamer@sectionintoc {3}{Planes de muestreo c=0}{7}{0}{3}
 \beamer@sectionintoc {4}{Comparaci\IeC {\'o}n y resultados}{8}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{30}{0}{5}
+\beamer@sectionintoc {5}{Conclusiones}{19}{0}{5}
+\beamer@sectionintoc {6}{Bibliograf\IeC {\'\i }a}{20}{0}{6}
+\beamer@sectionintoc {7}{Anexos}{21}{0}{7}
