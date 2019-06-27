@@ -36,7 +36,7 @@
 \end{institutions}
 
 \begin{secondaryabstract}
-Los métodos de muestreo tipo aceptación y rechazo juegan un papel sumamente importante en el área del control de calidad, de aquí que día a día se desarrollen nuevas técnicas que optimicen los procesos de calidad. En el siguiente artículo se verán replicadas las propuestas de Squeglia en cuanto a cómo trabajar con un método en el que se impone como requisito de aceptación cero defectuosos en la muestra. Se realizaron comparaciones entre los métodos tradicionalmente utilizados, con el método c=0; para estas comparaciones se utilizaron curvas características de operaciones, valores de AOQL, probabilidades de aceptación, y todo esto en contraste con diferentes tamaños de muestra, donde observamos que el método propuesto en comparación con los métodos MIL-STD-105E/ANSI Z1.4 protegen aún más al consumidor, siendo este método mas estricto  a la hora de aceptar lotes con cantidades ``grandes'' de defectuosos. El método por otra parte ``castiga'' al productor, ya que si este no tiene una calidad cercana al 100\% este tiende a rechazar muchos más lotes.
+Los métodos de muestreo tipo aceptación y rechazo juegan un papel sumamente importante en el área de control de calidad, de aquí que día a día se desarrollen nuevas técnicas que optimicen los procesos de calidad. En el siguiente artículo se verán replicadas las propuestas de Squeglia en cuanto a cómo trabajar con un método en el que se impone como requisito de aceptación cero defectuosos en la muestra. Se realizaron comparaciones entre los métodos tradicionalmente utilizados, con el método c=0; para estas comparaciones se utilizaron curvas características de operaciones, valores de AOQL, probabilidades de aceptación, y todo esto en contraste con diferentes tamaños de muestra, donde observamos que el método propuesto en comparación con el método MIL-STD-105E/ANSI Z1.4 protegen aún más al consumidor, siendo este método mas estricto  a la hora de aceptar lotes con cantidades ``grandes'' de defectuosos. El método por otra parte ``castiga'' al productor, ya que si este no tiene una calidad cercana al 100\%, tiende a rechazar muchos más lotes.
 
 
 
@@ -50,7 +50,7 @@ Algunos conceptos claves, que se mencionarán de aquí en adelante son:
 \item AQL (aceptable quality level). Representa el más pobre nivel de calidad del proceso del proveedor que el consumidor considera aceptable como un proceso promedio. La probabilidad de aceptar este nivel de calidad debe ser alta y se denota por $(1-\alpha)$, donde $\alpha$ es el riesgo del productor.
 \item LTPD (lot tolerance percent defective). Es el peor nivel de calidad que el consumidor esta dispuesto a aceptar en un lote individual. También se le conoce como nivel de calidad rechazable(RQL) y se denota por $\beta$(riesgo de consumidor).
 \end{itemize}
-El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que el plan de muestreo rechazará. Se desea designar un plan de muestreo que acepte un lote de producto particular en el AQL la mayoría de las veces y que lo rechace en el RQL la mayor parte del tiempo.
+El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que el plan de muestreo rechazará. Se desea designar un plan de muestreo que acepte un lote de producto particular en el AQL la mayoría de las veces y que lo rechace en el LTPD la mayor parte del tiempo.
 \begin{itemize}
 \item Curva Característica de Operación (OC). Mide el desempeño del plan de muestreo de aceptación. Da la probabilidad de aceptar un lote dependiendo del tamaño del lote, de la proporción de defectuosos en el lote,del tamaño de la muestra y del número de aceptación.
 \item AOQ: Calidad Promedio de Salida. Proporción promedio de unidades defectuosas entre aquellas unidades que superan el proceso de inspección. (Este concepto es una forma de medir el efecto de un plan de muestreo sobre la calidad que se tendrá después de aplicarlo). Se calcula como $AOQ=P_a*P$, donde $P_a$ es la probabilidad de aceptación y $P$ es la proporción real de defectuosos.
@@ -58,7 +58,7 @@ El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que el
 \end{itemize}
 
 \section{MIL-STD-105E/ANSI Z1.4}
-La norma MIL-STD-105E es un esquema de muestreo que ideó el gobierno de Estados Unidos para sus adquisiciones durante la Segunda Guerra Mundial. MIL-STD-105E está diseñada para muestreo de atributos lote por lote. Se usa AQL entre 0,10 a 10\%. Los planes AQL tienen eficacia máxima si rechaza suficientes lotes para que sea conveniente mejorar la calidad del producto cuando el fabricante produce un nivel de calidad peor que el AQL y si el plan rechaza muy pocos lotes cuando el fabricante produce un nivel de calidad mejor que el AQL.
+La norma MIL-STD-105E es un esquema de muestreo que ideó el gobierno de Estados Unidos para sus adquisiciones durante la Segunda Guerra Mundial. MIL-STD-105E está diseñada para muestreo de atributos lote por lote. Usualmente se usa un AQL entre 0,10 a 10\%. Los planes AQL tienen eficacia máxima si rechaza suficientes lotes para que sea conveniente mejorar la calidad del producto cuando el fabricante produce un nivel de calidad peor que el AQL y si el plan rechaza muy pocos lotes cuando el fabricante produce un nivel de calidad mejor que el AQL.
 
 Para utilizar un plan de muestreo indexado según AQL como la norma MIL-STD-105E se deben seguir los siguientes pasos:
 \begin{itemize}
@@ -87,19 +87,19 @@ Lo primero que trata de mostrar Squeglia en su libro, son los efectos de los núm
   \caption{Efecto del número de aceptación en la curva característica de operación}
 \end{figure}
 
-Otro aspecto importante que se compara en este libro, es el tamaño de muestra necesario para dos niveles de AQL establecidos, en la tabla 1 se observa la comparación que obtuvimos con la ayuda del paquete \citeasnoun{AyR} para el ANSI Z1.4 y con código propio para los planes c=0, y además, le añadimos los riesgos del productor que se podrían dar con cada uno de los planes de muestreo.
+Otro aspecto importante que se compara en este libro, es el tamaño de muestra necesario para dos niveles de AQL establecidos, en la tabla 1 se observa la comparación que obtuvimos con la ayuda del paquete \citeasnoun{AyR} para el ANSI Z1.4 y con código propio para los planes c=0, y además, le añadimos los riesgos del productor y del consumidor que se podrían dar con cada uno de los planes de muestreo.
 
 \begin{table}[htbp]
   \centering
-    \begin{tabular}{c|c|c|c|c}
+    \begin{tabular}{c|c|c|c|c|c}
     \hline
-    \textbf{Método} & \textbf{AQL} & \textbf{n} & \textbf{c} & \textbf{$\alpha$} \\
+    \textbf{Método} & \textbf{AQL} & \textbf{n} & \textbf{c} & \textbf{$\alpha$} & \textbf{$\beta$} \\
     \hline
-    \multirow{2}[2]{*}{\textbf{ANSI Z1.4}} & 0.01  & 125   & 3     & 0.03745 \\
-          & 0.04  & 125   & 10    & 0.01191 \\
+    \multirow{2}[2]{*}{\textbf{ANSI Z1.4}} & 0.01  & 125   & 3     & 0.03745 & 0.0997 \\
+          & 0.04  & 125   & 10    & 0.01191 & 0.0998 \\
     \hline
-    \multirow{2}[2]{*}{\textbf{Planes C=0}} & 0.01  & 42    & 0     & 0.34434 \\
-          & 0.04  & 18    & 0     & 0.52040 \\
+    \multirow{2}[2]{*}{\textbf{Planes C=0}} & 0.01  & 42    & 0     & 0.34434 & 0.0997 \\
+          & 0.04  & 18    & 0     & 0.52040 & 0.09975 \\
     \hline
     \end{tabular}%
     \caption{Comparación tamaños de muestra ambos planes}
@@ -107,7 +107,7 @@ Otro aspecto importante que se compara en este libro, es el tamaño de muestra ne
 \end{table}%
 Como lo menciona Squeglia, se logra apreciar que los planes c=0 brindan una protección igual o mayor al nivel de riesgo del consumidor de 0.1. También se observa que se realiza menos inspección (el tamaño de muestra es considerablemente inferior para valor de AQL mayores). 
 
-Otro aspecto importante que menciona Squeglia es el concepto del AOQL, él lo define como el máximo promedio de calidad saliente de una estación de inspección para un plan de muestreo en particular, en palabras propias, el AOQL lo podríamos definir como el peor nivel de calidad con el que se espera trabajar bajo un plan de muestreo específico. Squeglia ejemplifica esto mostrando una curva AOQ para el plan de muestreo $n=50$ y $c=0$, el AOQL se encuentra en el punto máximo de esta curva. En la figura 2 se pueden observar los resultados replicados. De esta gráfica podemos decir que no importa qué tan mala sea la proporción de defectuosos en los lotes que entran, la calidad promedio de salida nunca será peor que 0.73\% de defectuosos en promedio.
+Squeglia también hace énfasis en el concepto de AOQL, él lo define como el máximo promedio de calidad saliente de una estación de inspección para un plan de muestreo en particular, en palabras propias, el AOQL lo podríamos definir como el peor nivel de calidad con el que se espera trabajar bajo un plan de muestreo específico. El autor ejemplifica esto mostrando una curva AOQ para el plan de muestreo $n=50$ y $c=0$, el AOQL se encuentra en el punto máximo de esta curva. En la figura 2 se pueden observar los resultados replicados. De esta gráfica podemos decir que no importa qué tan mala sea la proporción de defectuosos en los lotes que entran, la calidad promedio de salida nunca será peor que 0.73\% de defectuosos en promedio.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.45]{FigurasUV/Figura3.pdf}

@@ -665,7 +665,7 @@ RQL=function(alfa,c,n){
   return(a[max1])
 }
 
-RQL(0.09977,2,80)
+RQL(0.09977,0,18)
 
 b=0.1
 n=(log(b)/log(1-RQL(0.09977,10,125)))

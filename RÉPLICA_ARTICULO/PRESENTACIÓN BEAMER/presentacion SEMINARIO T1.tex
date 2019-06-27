@@ -44,6 +44,16 @@ El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que e
 \end{frame}
 
 \begin{frame}{Introducción}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.6]{FigurasUV/AQLRQL.png}
+  \caption{Asociación AQL - $\alpha$ y RQL - $\beta$}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Introducción}
 \begin{itemize}
 \item Curva Característica de Operación (OC). Mide el desempeño del plan de muestreo de aceptación. Da la probabilidad de aceptar un lote dependiendo del tamaño del lote, de la proporción de defectuosos en el lote,del tamaño de la muestra y del número de aceptación.
 \item AOQ: Calidad Promedio de Salida. Proporción promedio de unidades defectuosas entre aquellas unidades que superan el proceso de inspección. (Este concepto es una forma de medir el efecto de un plan de muestreo sobre la calidad que se tendrá después de aplicarlo). Se calcula como $AOQ=P_a*P$, donde $P_a$ es la probabilidad de aceptación y $P$ es la proporción real de defectuosos.
@@ -92,19 +102,19 @@ Mientras el ANSI (MIL-STD-105) es un sistema AQL (protege al productor - Si la c
 \end{frame}
 
 \begin{frame}{Resultados}
-Otro aspecto importante que se compara en este libro, es el tamaño de muestra necesario para dos niveles de AQL establecidos, en la tabla 1 se observa la comparación que obtuvimos con la ayuda del paquete \cite{AyR} para el ANSI Z1.4 y con código propio para los planes c=0, y además, le añadimos los riesgos del productor que se podrían dar con cada uno de los planes de muestreo.
+Otro aspecto importante que se compara en este libro, es el tamaño de muestra necesario para dos niveles de AQL establecidos, en la tabla 1 se observa la comparación que obtuvimos con la ayuda del paquete \cite{AyR} para el ANSI Z1.4 y con código propio para los planes c=0, y además, le añadimos los riesgos del productor y consumidor que se podrían dar con cada uno de los planes de muestreo.
 
 \begin{table}[htbp]
   \centering
-    \begin{tabular}{c|c|c|c|c}
+    \begin{tabular}{c|c|c|c|c|c}
     \hline
-    \textbf{Método} & \textbf{AQL} & \textbf{n} & \textbf{c} & \textbf{$\alpha$} \\
+    \textbf{Método} & \textbf{AQL} & \textbf{n} & \textbf{c} & \textbf{$\alpha$} & \textbf{$\beta$} \\
     \hline
-    \multirow{2}[2]{*}{\textbf{ANSI Z1.4}} & 0.01  & 125   & 3     & 0.03745 \\
-          & 0.04  & 125   & 10    & 0.01191 \\
+    \multirow{2}[2]{*}{\textbf{ANSI Z1.4}} & 0.01  & 125   & 3     & 0.03745 & 0.0997 \\
+          & 0.04  & 125   & 10    & 0.01191 & 0.0998 \\
     \hline
-    \multirow{2}[2]{*}{\textbf{Planes C=0}} & 0.01  & 42    & 0     & 0.34434 \\
-          & 0.04  & 18    & 0     & 0.52040 \\
+    \multirow{2}[2]{*}{\textbf{Planes C=0}} & 0.01  & 42    & 0     & 0.34434 & 0.0997 \\
+          & 0.04  & 18    & 0     & 0.52040 & 0.09975 \\
     \hline
     \end{tabular}%
     \caption{Comparación tamaños de muestra ambos planes}
@@ -114,7 +124,7 @@ Se observa que se realiza menos inspección (el tamaño de muestra es considerab
 \end{frame}
 
 \begin{frame}{Resultados}
-Otro aspecto importante que menciona Squeglia es el concepto del AOQL, él lo define como el máximo promedio de calidad saliente de una estación de inspección para un plan de muestreo en particular. Squeglia ejemplifica esto mostrando una curva AOQ para el plan de muestreo $n=50$ y $c=0$, el AOQL se encuentra en el punto máximo de esta curva. En la figura 2 se pueden observar los resultados replicados. De esta gráfica podemos decir que no importa qué tan mala sea la proporción de defectuosos en los lotes que entran, la calidad promedio de salida nunca será peor que 0.73\% de defectuosos en promedio.
+Squeglia también hace énfasis en el concepto de AOQL, él lo define como el máximo promedio de calidad saliente de una estación de inspección para un plan de muestreo en particular. El autor ejemplifica esto mostrando una curva AOQ para el plan de muestreo $n=50$ y $c=0$, el AOQL se encuentra en el punto máximo de esta curva. En la figura 2 se pueden observar los resultados replicados. De esta gráfica podemos decir que no importa qué tan mala sea la proporción de defectuosos en los lotes que entran, la calidad promedio de salida nunca será peor que 0.73\% de defectuosos en promedio.
 \end{frame}
 
 \begin{frame}{Resultados}
