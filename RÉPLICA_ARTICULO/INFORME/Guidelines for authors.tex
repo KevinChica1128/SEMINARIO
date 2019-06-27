@@ -66,8 +66,8 @@ Para utilizar un plan de muestreo indexado según AQL como la norma MIL-STD-105E 
 \item Determinar el tamaño del lote N.
 \item Determinar el nivel de inspección: generalmente inspección nivel II (normal).
 \item Determinar el plan de muestreo: muestreo sencillo, doble o múltiple.
-\item Determinar la clave de tamaño de muestra (letra)
-\item Determinar el tamaño de muestra y el número de aceptación
+\item Determinar la clave de tamaño de muestra (letra). Ver tabla 1 Apéndice A.
+\item Determinar el tamaño de muestra y el número de aceptación. Ver tabla 2 Apéndice A.
 \item Seleccionar la muestra: se debe tomar del lote al azar.
 \item Inspeccionar la muestra: se cuentan los artículos defectuosos. Si el número que resulta no supera el número de aceptación que se encontró en la tabla se acepta el lote. En caso contrario se rechaza.
 \end{itemize}
@@ -139,7 +139,7 @@ En la figura 3 se muestra una comparación de los valores de AOQL para varios tam
 \end{table}%
 Se puede notar que cuando el tamaño de muestra es 20 y $c=0$ el AOQL es de aproximadamente 0.0437, y cuando $c=1$, el AOQL aumenta a 0.072, es decir, cuando el número de aceptación aumenta en 1, el peor nivel de calidad que se espera, en términos de porcentaje de defectuosos aumenta en 2.83\%. Cuando el tamaño de muestra es 80, podemos ver que cuando $c=0$ y $c=1$, el AOQL es, respectivamente, de 0.0108 y 0.0174; en este caso, el peor nivel de calidad esperado, aumenta solo en 0.66\% de defectuosos. Si se realiza la comparación por filas en lugar de por columnas, es decir, si comparamos en términos de tamaño de muestra fijando el número de aceptación, vemos que el AOQL presenta un aumento considerable cuando se pasa de 80 a 20 como tamaño de muestra. Con esto se confirma la interpretación inicial sobre el gráfico 3, mientras mayor sea el tamaño de muestra y menor sea el número de aceptación, la máxima calidad promedio de salida(AOQL) va a ser mucho menor en términos de porcentaje de defectuosos.
 
-Finalmente, el autor realiza curvas de operación para diferentes tamaños de muestra por rangos de tamaños de lotes, se mostrará las curva de operación en el caso extremo superior (cuando el tamaño del lote es extremadamente grande, es decir, está entre 150001 y 500000 ), para observar el efecto del tamaño de muestra en las probabilidades de aceptación. Si desea ver el comportamiento del tamaño de muestra en lotes con tamaños correspondientes a otros rangos, puede revisar las curvas de operación en el anexo 1 y obtener su propia interpretación.
+Finalmente, el autor realiza curvas de operación para diferentes tamaños de muestra por rangos de tamaños de lotes, se mostrará las curva de operación en el caso extremo superior (cuando el tamaño del lote es extremadamente grande, es decir, está entre 150001 y 500000 ), para observar el efecto del tamaño de muestra en las probabilidades de aceptación. Si desea ver el comportamiento del tamaño de muestra en lotes con tamaños correspondientes a otros rangos, puede revisar las curvas de operación en el apéndice B y obtener su propia interpretación. En la figura 4, se puede notar que con un tamaño de muestra muy pequeño(170) en comparación al tamaño del lote(150001-500000), la probabilidad de aceptar un lote con un porcentaje de defectuosos del 4\% o más es casi nula.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.4]{FigurasUV/CO14.pdf}
@@ -160,6 +160,19 @@ Algunas conclusiones importantes que se obtienen, a partir de los resultados nue
 
 \nocite{ControlR}
     \appendix% !don't modify this line¡
+
+\section{Tablas}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.7]{FigurasUV/letra.png}
+  \caption{Letra código del plan}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.86]{FigurasUV/n.png}
+  \caption{Tamaño de muestra}
+\end{figure}
 
 \section{Curvas de operación}
 \begin{figure}[h!]
@@ -240,16 +253,5 @@ Algunas conclusiones importantes que se obtienen, a partir de los resultados nue
   \caption{Curvas OC para planes de muestreo simples con C=0. Tamaño del lote 35001 - 150000}
 \end{figure}
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.8]{FigurasUV/letra.png}
-  \caption{Letra código del plan}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.9]{FigurasUV/n.png}
-  \caption{Tamaño de muestra}
-\end{figure}
 \end{document}
 
