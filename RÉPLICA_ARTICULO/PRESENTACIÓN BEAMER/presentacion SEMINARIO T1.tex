@@ -37,6 +37,7 @@ Squeglia (2008)\cite{A0} nos muestra en su libro una comparación bastante compl
 \begin{frame}{Introducción}
 Algunos conceptos claves, que se mencionarán de aquí en adelante son:
 \begin{itemize}
+\justifying
 \item AQL (aceptable quality level). Representa el más pobre nivel de calidad del proceso del proveedor que el consumidor considera aceptable como un proceso promedio. La probabilidad de aceptar este nivel de calidad debe ser alta y se denota por $(1-\alpha)$, donde $\alpha$ es el riesgo del productor.
 \item LTPD (lot tolerance percent defective). Es el peor nivel de calidad que el consumidor esta dispuesto a aceptar en un lote individual. También se le conoce como nivel de calidad rechazable(RQL) y se denota por $\beta$(riesgo de consumidor).
 \end{itemize}
@@ -46,7 +47,7 @@ El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que e
 \begin{frame}{Introducción}
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.6]{FigurasUV/AQLRQL.png}
+  \includegraphics[scale=0.7]{FigurasUV/AQLRQL.png}
   \caption{Asociación AQL - $\alpha$ y RQL - $\beta$}
 \end{figure}
 \end{frame}
@@ -55,6 +56,7 @@ El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que e
 
 \begin{frame}{Introducción}
 \begin{itemize}
+\justifying
 \item Curva Característica de Operación (OC). Mide el desempeño del plan de muestreo de aceptación. Da la probabilidad de aceptar un lote dependiendo del tamaño del lote, de la proporción de defectuosos en el lote,del tamaño de la muestra y del número de aceptación.
 \item AOQ: Calidad Promedio de Salida. Proporción promedio de unidades defectuosas entre aquellas unidades que superan el proceso de inspección. (Este concepto es una forma de medir el efecto de un plan de muestreo sobre la calidad que se tendrá después de aplicarlo). Se calcula como $AOQ=P_a*P$, donde $P_a$ es la probabilidad de aceptación y $P$ es la proporción real de defectuosos.
 \item AOQL: Máxima Calidad Promedio de Salida. Se calcula como $Max(AOQ)$
@@ -65,6 +67,7 @@ El AQL describe lo que el plan de muestreo aceptará y el LTPD describe lo que e
 \begin{frame}{MIL-STD-105E/ANSI Z1.4}
 La norma MIL-STD-105E es un esquema de muestreo que ideó el gobierno de Estados Unidos para sus adquisiciones durante la Segunda Guerra Mundial. MIL-STD-105E está diseñada para muestreo de atributos lote por lote. Se usa AQL entre 0,10 a 10\%. Para utilizar un plan de muestreo indexado según AQL como la norma MIL-STD-105E se deben seguir los siguientes pasos:
 \begin{itemize}
+\justifying
 \item[1.] Establecer el valor de AQL.
 \item[2.] Determinar el tamaño del lote N.
 \item[3.] Determinar el nivel de inspección: generalmente inspección nivel II (normal).
@@ -194,6 +197,7 @@ En la figura 3 se muestra una comparación de los valores de AOQL para varios ta
 \begin{frame}{Conclusiones}
 Algunas conclusiones importantes que se obtienen, a partir de los resultados nuestros y del libro de Squeglia comparando ambos métodos de muestreo(MIL-STD-105E/ANSI Z1.4 y C=0) de aceptación son:
 \begin{itemize}
+\justifying
 \item[1.]Los planes de aceptación cero desarrollados por Squeglia están diseñados ``para brindar una protección general al consumidor igual o mayor con menos inspección que los planes de muestreo MIL-STD-105 correspondientes''. Como se pudo observar en las probabilidades de aceptación, para lotes con niveles de defectos reales mayores que 0 pero menores que el RQL, es más probable que el enfoque C = 0 rechace el lote (proteja al consumidor).
 
 \item[2.]Si la calidad está cerca del 100\%, los planes C = 0 darán como resultado que se inspeccionen menos partes en total.

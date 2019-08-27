@@ -1,0 +1,101 @@
+@ARTICLE{Borges-05,
+  AUTHOR =       {Borges, R.},
+  TITLE =        {{Análisis de supervivencia de pacientes con diálisis peritoneal}},
+  JOURNAL =      {Revista Colombiana de Estadistica},
+  YEAR =         {2005},
+  volume =       {28},
+  number =       {2},
+  pages =        {243-259},
+}
+
+@ARTICLE{Borges-05,
+  AUTHOR =       {Brown, M. and Forsythe},
+  TITLE =        {{Robust Test for the Equality of Variantes}},
+  JOURNAL =      {Journal of the American Statistical Association},
+  YEAR =         {1974},
+  volume =       {69},
+  number =       {346},
+  pages =        {364-367},
+}
+
+@MASTERSTHESIS{Caballero-86,
+  AUTHOR =       {Caballero, S. G.},
+  TITLE =        {Un estimador del parámetro g de la distribución g de Tukey},
+  SCHOOL =       {{Universidad Nacional de Colombia}},
+  YEAR =         {1986},
+  type =         {{Tesis de Maestría}},
+  address =      {{Facultad de Ciencias. Departamento de Estadística, Bogotá}},
+}
+
+@BOOK{Castro-03,
+  AUTHOR =       {De Castro, Rodrigo},
+  TITLE =        {El universo \LaTeX},
+  PUBLISHER =    {Unibiblos},
+  YEAR =         {2003},
+  edition =      {segunda},
+  ADDRESS =      {Universidad Nacional de Colombia, Bogotá}
+}
+
+@ARTICLE{Conover-81,
+  AUTHOR =       {Conover, W. and Johnson, M. E. and Johnson, M.},
+  TITLE =        {{A Comparative Study of Tests for Homogeneity of Variances, With Applications to the Outer Continental Shelf Bidding Data}},
+  JOURNAL =      {Technometrics},
+  YEAR =         {1981},
+  volume =       {23},
+  pages =        {351-361},
+}
+
+@BOOK{DAPD97,
+  AUTHOR =       {DAPD},
+  TITLE =        {Población estratificación y aspectos socioeconómicos de Santa Fe de Bogotá},
+  PUBLISHER =    {Departamento Administrativo de Planeación Distrital},
+  YEAR =         {1997},
+  address =      {Bogotá},
+}
+
+@BOOK{Dodge-85,
+  AUTHOR =       {Dodge, Y.},
+  TITLE =        {{A}nalysis of {E}xperiments with {M}issing {D}ata},
+  PUBLISHER =    {John Wiley \& Sons},
+  YEAR =         {1985},
+  address =      {{New York}},
+}
+
+
+@BOOK{Milliken-84,
+  AUTHOR =       {Milliken, G.A. and Johnson, D.E. },
+  TITLE =        {{Analysis of Messy Data}},
+  PUBLISHER =    {Van Nostrand Reinhold},
+  YEAR =         {1984},
+  volume =       {I},
+  series =       {of Designed Experiments},
+  address =      {New York},
+}
+
+@BOOK{Searle-92,
+  AUTHOR =       {Searle, S. R. and Casella, G. and McCulloch, C.},
+  TITLE =        {{Variance Components}},
+  PUBLISHER =    {John Wiley \& Sons},
+  YEAR =         {1992},
+  address =      {New York},
+}
+
+@Manual{R,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Development Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2007},
+    note = {{ISBN} 3-900051-07-0},
+    url = {http://www.R-project.org},
+}
+
+@ARTICLE{Santana-06,
+  AUTHOR =       {Santana, Juan Camilo},
+  TITLE =        {Predicción de series temporales con redes neuronales: una aplicación a la inflación colombiana},
+  JOURNAL =      {Revista Colombiana de Estadistica},
+  YEAR =         {2006},
+  volume =       {29},
+  number =       {1},
+  pages =        {77-92},
+}

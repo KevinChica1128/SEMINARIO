@@ -1,0 +1,220 @@
+%% -------------------------------------------------------------------------------------
+% This is a general template file for preparing an article for Revista Colombiana de Estadística
+% *************************************************************************************
+\documentclass[english]{revcoles}
+%
+\hyphenation{}
+% //// --------------------------------------------------------------------------------
+\begin{document}
+
+\title[maintitle = XXIX Simposio Internacional de Estadística,
+       secondtitle = Instructions for Authors,
+       shorttitle = Instructions for Authors
+]
+
+\begin{authors}
+\author[firstname = Leonardo,
+        surname = Trujillo,
+        numberinstitution = 1,
+        affiliation = Universidad Nacional de Colombia,
+        email = ltrujilloo@unal.edu.co]
+\author[firstname = Ramón,
+        surname = Giraldo,
+        numberinstitution = 1,
+        affiliation = Universidad Nacional de Colombia,
+        email = rgiraldoh@unal.edu.co]
+\author[firstname = Liliana,
+        surname = López,
+        numberinstitution = 1,
+        affiliation = Universidad Nacional de Colombia,
+        email = llopezk@unal.edu.co]
+\end{authors}
+%
+\begin{institutions}
+     \institute[subdivision = Statistics Department,
+                institution = Universidad Nacional de Colombia,
+                city = Bogotá,
+                country = Colombia]
+\end{institutions}
+
+\begin{mainabstract}
+This document gives instructions to prepare a \LaTeX\ version of the working-papers to be presented in the XXIX Simposio Internacional de Estad\'istica. The document is written using a \LaTeX\ format (file \emph{Guidelines for authors.tex}) and can be used as a template just replacing its contents by the terms of the paper to be presented. It is necessary to use also the files \emph{revcoles.cls}, \emph{references.bib} and \emph{graph\_example.eps}.\\
+
+This template belongs to Revista Colombia de Estad\'istica.%
+%
+\keywords{\LaTeX\ format for documents, Symposium of Statistics}
+\end{mainabstract}
+
+\begin{secondaryabstract}
+Se dan las instrucciones para la presentación de trabajos al XXIX Simposio Internacional de Estad\'istica, utilizando \LaTeX.
+Este texto está escrito en el formato de un art\'iculo (\emph{Guidelines for authors.tex}) y puede utilizarse
+como plantilla, reemplazando este contenido por el del trabajo a presentar. Se requieren los archivos \emph{revcoles.cls},
+\emph{references.bib} y \emph{graph\_example.eps}.\\%
+\'Esta plantilla pertenece a la Revista Colombia de Estad\'istica. 
+%
+\keywords{ Formato en \LaTeX\ para documentos, Simposio de Estad\'istica}
+\end{secondaryabstract}
+
+\section{General guidelines}
+
+This document gives the instructions to prepare a \LaTeX\ version of the papers to be presented in XXIX Simposio Internacional de Estad\'istica (The Symposium in short) to be held in the city od Barranquilla - July 15 to 19 2019. The document was written using the \LaTeX\ journal template (file \emph{template.tex}), whose copyright belongs to The Colombian Journal of Statistics (Statistics Department, Universidad Nacional de Colombia - Bogot\'a - Colombia).
+% and can be also used as a template (file \emph{Guidelines for authors RevColEs.tex}) just replacing its contents appropriately. The document is a modification of an earlier guide written by recent editors of the journal.
+
+Symposium is an event of the Statistics Department of the Universidad Nacional de Colombia which aims to be an academic meeting where users of statistics can present the main results of working-papers in which some statistical tool is developed or applied, those works could be drafts (papers in progress) or finished papers.
+
+Authors should submit their manuscripts online. In the first stage (abstract submissions) only is required the abstract (maximum two pages) in which the authors of the manuscript provide the motivation of the paper, the statistical tools used to solve or to analyze the data and finally some of the main results. Once the work is accepted a long version have to submitted. All the guidelines that follow are made for the extended version.
+
+The submitted articles to The Symposium must be presented in PDF format with text, figures and tables in black and white.
+
+
+\section{Manuscript organization}\label{ejem}
+
+To prepare the article use our \LaTeX\ macro package, which includes the files \emph{revcolex.tex}, \emph{Guidelines for authors.pdf}, \emph{references.bib}, and \emph{revcoles.cls}. This package is available in our website.
+Every article must include:
+
+\begin{itemize}
+\item Title (concise and informative), both in English and Spanish.
+\item Each author's full names, email address, as well as affiliation. Where the family name may be ambiguous, please indicate this clearly. If authors belong to the same institution and dependence, type the name once.  If the authors belong to different institutions or the same institution but to different departments, each of these must be specified individually.
+\item Abstract can be written in English or Spanish (Resumen). The abstract should not be longer than 250 words. The first 150 words should succinctly describe the
+paper's motivation. It should state the major points and the principal conclusions of the paper and should highlight the significance of the contribution. The summary should not contain formulae, abbreviations or references.
+\item Three (3) to six (6) keywords, separated by colons and in alphabetical order, using the Current Index to Statistics (CIS), both in English and Spanish.
+\item If the article is based on a undergraduate thesis, master thesis or a doctoral dissertation, it should be included as a reference. If the article is based on a research project, it must include the title of the project and the grant that supported it.
+\item All references must be cited in the text
+\end{itemize}
+
+There is no maximum length for manuscripts, but it is much more difficult and time-consuming to get reviews for long manuscripts. An efficient writing style with a selective use of tables and figures is appreciated. Most manuscripts accepted for publication have fewer than 30 double-spaced pages, including text, figures, tables, and references.
+
+\section{Editorial Style}
+
+In addition to content, manuscripts are judged on their clarity. Consequently, well-written and well-structured papers that will be of interest to a wide segment of the readership are preferred. Although the production office does not undertake major revision or rewriting of manuscripts, it is our policy to copyedit all manuscripts accepted for publication in accordance with the accepted rules of correct grammar, usage, spelling, and punctuation.  In addition, some redundant words and phrases are deleted.
+
+Avoid common problems of style:
+\begin{itemize}
+\item  Use quotation marks only when a standard term is used in a nonstandard way and to indicate the beginning and ending of a direct quotation.
+\item  Hyphens are used when two or more adjectives or an adjective and a noun together modify another noun; for example, goodness-of-fit test is the equivalent of test for goodness of fit. Most words with prefixes such as sub and non are not hyphenated, for instance, subtable, nonnormal.
+\item Italics are used to introduce important terms, when appropriate; they are to be used sparingly to indicate emphasis.
+\item Abbreviations and acronyms should be minimized; those that are used are spelled out on their first appearances in the manuscript with the shortened
+form given in parentheses, for example, best linear unbiased estimate (BLUE).
+\item Numbers under 10 are spelled out when they are not part of an equation or an expression containing symbols.
+\item The sign \% is always used when giving a specific percentage, for example, 23\%, not 23 percent. Otherwise use the word percent.
+\end{itemize}
+
+\section{Sections}
+Divide your article into clearly defined and numbered sections. Sections should be numbered 1, 2, etc., Section 1 being an introduction. Subsections should be numbered 1.1 (then 1.1.1, 1.1.2, ...), 1.2, etc. Section \textbf{References} is the last one and is not numbered.  Any subsection may be given a brief heading.
+
+
+\section{Tables, Figures and Equations}
+
+Both figures and tables should be numbered consecutively with arabic numbers, and clearly titled and labeled, and the identifying number must be cited in
+the text. Once the article is accepted the tables should be designed so they fit the printing area of CoJS. That includes the contents of tables, their length, number of representative digits, titles, subtitles, labels and footnotes.
+Some important elements to take into account in the construction of  tables are
+
+\begin{itemize}
+\item Numbers must be centered if they have the same number of digits. In another case must be aligned with the right margin of the title.
+\item When the tables have data with decimal numbers, the number of decimal places must be equal within the same column.
+\item Alphanumeric data should be centered.
+\end{itemize}
+Some examples are given in Tables \ref{table1} and \ref{table2}.
+
+\begin{table}[!h]
+\caption{\small{Estimated values for the factorial structure
+$2\times 6$, with $m=10$ missing values.}}\label{table1}
+\centering {\small
+\begin{tabular}{ccrc}\hline
+$y_2$   &
+$\hat{y}_2$ &
+\multicolumn{1}{c}{$e_2$}   &
+$\hat{y}_2^*$\\ \hline
+52.1    & 54.2  &  $-2.76$      & 51.4  \\
+52.1    & 54.2  &  $ 1.10$      & 53.1  \\
+52.3    & 52.4  &  $-0.71$      & 51.7  \\
+59.9    & 59.3  &  $ 0.44$      & 59.7  \\
+59.9    & 59.3  &  $ 0.80$      & 60.1  \\
+51.7    & 54.0  &  $-1.33$      & 52.7  \\
+63.9    & 61.3  &  $ 0.27$      & 61.6  \\
+63.9    & 61.3  &  $ 1.31$      & 62.6  \\
+67.2    & 66.4  &  $-0.44$      & 66.0  \\
+64.8    & 61.0  &  $ 2.12$      & 63.1  \\ \hline
+\end{tabular}}
+\end{table}
+
+
+\begin{table}[!htb]
+\centering\small \caption{Analysis of variance based on type III sum of squares.}\label{table2}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ccccc}\hline
+\parbox[c][0.9\height]{18mm}{\centering\smallskip Source of\\Variation\smallskip} &%
+\parbox[c][0.9\height]{25mm}{\centering\smallskip Degrees of \\Freedom\smallskip} &%
+\parbox[c][0.9\height]{16mm}{\centering\smallskip Sum of \\Squares\smallskip} &%
+\parbox[c][0.9\height]{15mm}{\centering\smallskip Mean\\Square\smallskip}& Estadístico F\\\hline
+Model & $p+r-2$&$SCM^*$&$CMM^*$&$FG^*=\frac{CMM^*}{CME}$\\ %\hline
+Fixed effects & $p-1$&$SCMF^*$&$CMMF^*$&$FF=\frac{CMMF^*}{CME}$\\ \hline
+\end{tabular}
+\end{table}
+
+Figures must be visually clear and capable of withstanding reduction. All elements of figures and tables such as bars, segments, words, symbols and numbers must be printed in black. Figures must be in pdf, tif, gif, png or eps format, all of them in black and white. The title should be centered and at the bottom of Figure. See as an example Figure \ref{figure1}
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[scale=0.4]{graph_example.eps}
+  \caption{Simulations of Kostiakov infiltration curves}\label{figure1}
+\end{figure}
+
+Numbered mathematical expressions should be typed and centered on a separate line and identified by consecutive Arabic numerals in parentheses placed flush with the right margin. Short expressions requiring only one line should remain in the text, unless there is the need to refer to them elsewhere by a number. Lengthy equations should be handled using definitions or broken to conform to the column format. Keep in mind that space is placed around all operation symbols and before and after function words such as log, sin, and ln (unless they precede or follow a parenthesis, e.g., log(x + y)).
+Use no punctuation after the equations (see Equation \ref{equ1}). Use the simplest possible form for all mathematical symbols. Number only those equations to which reference is made elsewhere in the article. Please define any symbol that you use. Do not insert multi-line formulae in the text.
+
+\begin{equation}\label{equ1}
+    y=W\mu+Z\theta+e
+\end{equation}
+
+Use square brackets for matrices (see Equation \ref{equ2})
+
+\begin{equation}\label{equ2}
+\begin{bmatrix}
+W'R^{-1}W&W'R^{-1}Z\\
+Z'R^{-1}W&Z'R^{-1}Z+D^{-1}
+\end{bmatrix}
+\begin{bmatrix}
+\mu \\ \theta
+\end{bmatrix}=
+\begin{bmatrix}
+W'R^{-1}y\\
+Z'R^{-1}y
+\end{bmatrix}
+\end{equation}
+
+\section{Data}
+
+Whenever a dataset is used, its source should be fully documented. When it is not practical to include the whole of a dataset in the paper, the paper should
+state how the complete dataset was obtained or built.
+
+\section{Results Based on Computation}
+
+Papers reporting results based on computation should provide enough information so that readers can evaluate the quality of the results. Such information
+includes estimated accuracy of results, as well as descriptions of pseudo random number generators, numerical algorithms, computers, programming languages, and major software components that were used.
+
+\section{Acknowledgments}
+
+Acknowledgments of people, grants, funds, etc. should be placed in a separate section before the reference list. The names of funding organizations should be written in full.
+
+\section{Citations}
+Authors should use BiBTeX to prepare references whenever possible. Use the \emph{references.bib} style given in the \LaTeX\ macro package (see the website of the journal). References in the text are included by using  in other the commands \emph{cite} and \emph{citeasnoun}. Some examples of citations are
+
+\begin{itemize}
+\item \cite{Dodge-85},
+\item \citeasnoun{Borges-05}
+\item \citeasnoun{Conover-81}
+\item \citeasnoun{R}
+\end{itemize}
+
+\section{Appendices}
+
+Lengthy technical portions of a manuscript should appear in a separate appendix to the manuscript.
+
+
+    \bibliography{references}
+
+    \appendix% !don't modify this line¡
+
+\end{document}
+

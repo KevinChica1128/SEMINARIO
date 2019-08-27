@@ -1,0 +1,13 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@sectionintoc {2}{\IeC {\textquestiondown }Qu\IeC {\'e} son las redes neuronales?}{4}{0}{2}
+\beamer@sectionintoc {3}{\IeC {\textquestiondown }C\IeC {\'o}mo funcionan?}{13}{0}{3}
+\beamer@sectionintoc {4}{Funciones de activaci\IeC {\'o}n}{21}{0}{4}
+\beamer@subsectionintoc {4}{1}{Funci\IeC {\'o}n sigmoide}{22}{0}{4}
+\beamer@subsectionintoc {4}{2}{Funci\IeC {\'o}n Tanh}{23}{0}{4}
+\beamer@subsectionintoc {4}{3}{Funci\IeC {\'o}n ReLU}{24}{0}{4}
+\beamer@subsectionintoc {4}{4}{Ejemplo}{25}{0}{4}
+\beamer@sectionintoc {5}{Gradient Descent}{33}{0}{5}
+\beamer@sectionintoc {6}{Backpropagation}{37}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{41}{0}{7}
+\beamer@sectionintoc {8}{Bibliograf\IeC {\'\i }a}{42}{0}{8}
